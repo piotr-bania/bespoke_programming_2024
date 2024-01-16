@@ -5,7 +5,6 @@ const Background = () => {
 
     return (
         <mesh
-
             receiveShadow
             geometry={nodes.background.geometry}
             material={materials['background']}

@@ -3,24 +3,22 @@
 #navbar {
     position: fixed;
     width: 100%;
-    
-    .canvas_navbar {
-        width: 80px;
-        height: 80px;
-        z-index: 1;
+    z-index: 100;
+
+    img {
+        width: 70px;
+        height: auto;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        .canvas_navbar {
-            top: $medium;
-            left: calc($medium * 1.5);
+        img {
+            width: 60px;
         }
     }
 
     @media screen and (max-width: 767px) {
-        .canvas_navbar {
-            top: $small;
-            left: $small;
+        img {
+            width: 50px;
         }
     }
 }
