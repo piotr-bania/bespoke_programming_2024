@@ -14,9 +14,8 @@ export const loader_variant = {
 }
 
 export const canvas_variant = {
-    hidden: { scale: 0.95, opacity: 0 },
+    hidden: { opacity: 0 },
     visible: {
-        scale: 1,
         opacity: 1,
         transition: { delay: 0.2, duration: 1, ease: [0.6, 0.01, 0.05, 0.9] }
     }
@@ -61,11 +60,20 @@ export const paragraph_variant = {
     }
 }
 
-export const cta_variant = {
+export const link_variant = {
     hidden: { scale: 0.9, opacity: 0 },
     visible: {
         scale: 1,
         opacity: 1,
         transition: { delay: 1.4, duration: 0.8, ease: [0.6, 0.01, 0.05, 0.9] }
+    }
+}
+
+export const button_variant = {
+    hidden: { x: 50, opacity: 0 },
+    visible: {
+        x: 0,
+        opacity: 1,
+        transition: { delay: 1.6, duration: .6, ease: [0.6, 0.05, 0.01, 0.99] }
     }
 }

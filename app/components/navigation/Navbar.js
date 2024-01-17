@@ -4,7 +4,7 @@ import './navbar.scss'
 import { motion as m } from 'framer-motion'
 import { logo_variant } from '../animations/Framer_Motion_Variants'
 import Link from 'next/link'
-import Image from 'next/image'
+import Navbar_Canvas from './Navbar_Canvas'
 
 const Navbar = () => {
     return (
@@ -13,9 +13,10 @@ const Navbar = () => {
                 initial='hidden'
                 animate='visible'
                 variants={logo_variant}
+                className='logo'
             >
                 <Link href='/'>
-                    <Image src='/svg/logo.svg' width={100} height={100} />
+                    <Navbar_Canvas />
                 </Link>
             </m.div>
         </section>

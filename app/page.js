@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react'
 import Loading from './components/animations/Loading'
 import Hero_Section from './components/sections/Hero_Section'
+import Quote_Section from './components/sections/Quote_Section'
+import Hero_Canvas from './components/sections/Hero_Canvas'
 
 export default function Home() {
     const [loading, setLoading] = useState(true)
@@ -17,13 +19,11 @@ export default function Home() {
 
     return (
         <main>
-            {loading ? (
+            {/* {loading ? (
                 <Loading />
-            ) : (
-                <>
-                    <Hero_Section />
-                </>
-            )}
+            ) : ( */}
+                <Hero_Canvas />
+            {/* )} */}
         </main>
     )
 }
