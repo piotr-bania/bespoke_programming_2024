@@ -21,10 +21,10 @@ const Hero_Canvas = () => {
                 {/* <PerspectiveCamera makeDefault position={[0, 0, 6]} /> */}
                 <Scrolled_Camera />
                 <Environment files='./environment/christmas_photo_studio_06_1k.hdr' />
-                <directionalLight castShadow intensity={1} position={[4, 2, 5]}/>
+                {/* <directionalLight castShadow intensity={1} position={[4, 2, 5]}/> */}
 
                 <Suspense fallback={null}>
-                    <group scale={20} position-y={-3}>
+                    <group scale={14} position-y={0}>
                         <Homepage />
                     </group>
                 </Suspense>

@@ -1,12 +1,20 @@
-import { Float, useGLTF } from '@react-three/drei'
+import { useEffect, useRef } from 'react'
+import { Float, useGLTF, useAnimations } from '@react-three/drei'
 import { motion as m3d } from 'framer-motion-3d'
 import { useRouter } from 'next/navigation'
 
 const Homepage = () => {
-    const homepage = useGLTF('./models/button_404.glb')
-    const text = useGLTF('./models/text_homepage.glb')
-    const background = useGLTF('./models/background_home.glb')
-    const spheres = useGLTF('./models/spheres.glb')
+    const sceneRef = useRef()
+    const { scene: homepage, animations } = useGLTF('./models/homepage.glb')
+    const { actions } = useAnimations(animations, sceneRef)
+
+    useEffect(() => {
+        if (actions) {
+            actions['subheadingAction'].play()
+        }
+    }, [actions])
+
+    const hero_button = useGLTF('./models/hero_button.glb')
 
     const router = useRouter()
     const handleClick = () => {
@@ -15,16 +23,8 @@ const Homepage = () => {
 
     return (
         <>
-            <mesh>
-                <primitive object={background.scene} />
-            </mesh>
-
-            <mesh>
-                <primitive object={text.scene} />
-            </mesh>
-
-            <mesh>
-                <primitive object={spheres.scene} />
+            <mesh ref={sceneRef} >
+                <primitive object={homepage} />
             </mesh>
 
             <Float
@@ -34,12 +34,12 @@ const Homepage = () => {
                 floatIntensity={0.2}
             >
                 <m3d.mesh
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.02 }}
                     onHoverStart={() => setIsHovered(true)}
                     onHoverEnd={() => setIsHovered(false)}
                     onClick={handleClick}
                 >
-                    <primitive object={homepage.scene} />
+                    <primitive object={hero_button.scene} />
                 </m3d.mesh>
             </Float>
         </>
