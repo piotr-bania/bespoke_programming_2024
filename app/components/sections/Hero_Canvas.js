@@ -24,7 +24,7 @@ const Hero_Canvas = () => {
                 {/* <directionalLight castShadow intensity={1} position={[4, 2, 5]}/> */}
 
                 <Suspense fallback={null}>
-                    <group scale={14} position-y={0}>
+                    <group scale={1} position-y={-3}>
                         <Homepage />
                     </group>
                 </Suspense>

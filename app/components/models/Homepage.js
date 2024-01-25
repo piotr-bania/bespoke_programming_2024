@@ -8,13 +8,14 @@ const Homepage = () => {
     const { scene: homepage, animations } = useGLTF('./models/homepage.glb')
     const { actions } = useAnimations(animations, sceneRef)
 
-    useEffect(() => {
-        if (actions) {
-            actions['subheadingAction'].play()
-        }
-    }, [actions])
+    // useEffect(() => {
+    //     if (actions) {
+    //         actions['subheadingAction'].play()
+    //     }
+    // }, [actions])
 
     const hero_button = useGLTF('./models/hero_button.glb')
+    const untitled = useGLTF('./models/untitled.glb')
 
     const router = useRouter()
     const handleClick = () => {
@@ -23,7 +24,11 @@ const Homepage = () => {
 
     return (
         <>
-            <mesh ref={sceneRef} >
+            <mesh>
+                <primitive object={untitled.scene} />
+            </mesh>
+
+            {/* <mesh ref={sceneRef} >
                 <primitive object={homepage} />
             </mesh>
 
@@ -41,7 +46,7 @@ const Homepage = () => {
                 >
                     <primitive object={hero_button.scene} />
                 </m3d.mesh>
-            </Float>
+            </Float> */}
         </>
     )
 }
