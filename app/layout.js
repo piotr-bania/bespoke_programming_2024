@@ -1,5 +1,4 @@
 import './globals.scss'
-import Navbar from './components/navigation/Navbar'
 
 export const metadata = {
     title: 'Create Next App',
@@ -9,8 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body>
-                {/* <Navbar /> */}
+            <body suppressHydrationWarning={true}>
                 {children}
             </body>
         </html>

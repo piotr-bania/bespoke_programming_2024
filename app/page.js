@@ -1,29 +1,7 @@
-'use client'
-
-import React, { useState, useEffect } from 'react'
-import Loading from './components/animations/Loading'
-import Hero_Section from './components/sections/Hero_Section'
-import Quote_Section from './components/sections/Quote_Section'
-import Hero_Canvas from './components/sections/Hero_Canvas'
+import Homepage_Canvas from './components/pages/Home/Homepage_Canvas'
 
 export default function Home() {
-    const [loading, setLoading] = useState(true)
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setLoading(false)
-        }, 3000)
-
-        return () => clearTimeout(timer)
-    }, [])
-
     return (
-        <main>
-            {/* {loading ? (
-                <Loading />
-            ) : ( */}
-                <Hero_Canvas />
-            {/* )} */}
-        </main>
+        <Homepage_Canvas />
     )
 }
