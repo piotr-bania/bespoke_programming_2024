@@ -11,6 +11,7 @@ const Homepage = () => {
     const scene = useGLTF('./models/room_0/scene.glb')
     const entrance = useGLTF('./models/room_0/entrance.glb')
     const { nodes, materials } = useGLTF('./models/room_0/portal.glb')
+    const test = useGLTF('./models/room_0/test.glb')
 
     const router = useRouter()
     const handleClick = () => {
@@ -19,7 +20,7 @@ const Homepage = () => {
 
     return (
         <group>
-            <primitive object={scene.scene} />
+            {/* <primitive object={scene.scene} />
             <primitive object={entrance.scene} />
 
             <m3d.mesh
@@ -38,7 +39,11 @@ const Homepage = () => {
                 onHoverStart={() => setIsHovered(true)}
                 onHoverEnd={() => setIsHovered(false)}
                 onClick={handleClick}
-            />
+            /> */}
+
+            <mesh scale={2.2}>
+                <primitive object={test.scene} />
+            </mesh>
 
             <Sparkles
                 color='#CEE9FC'
