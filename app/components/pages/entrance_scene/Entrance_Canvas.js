@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useRef, useState, useEffect } from 'react'
+import { Suspense, useRef, useState, useEffect, use } from 'react'
 import { motion as m } from 'framer-motion'
 import { canvas_variant } from '../../animations/Framer_Motion_Variants'
 import { Fog } from 'three'
@@ -8,6 +8,7 @@ import { Environment, OrbitControls, PerspectiveCamera } from '@react-three/drei
 import Entrance from './Entrance'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../../animations/Loader'
+import Loading_Text from '../../text/Loading_Text'
 
 const Entrance_Canvas = () => {
     const cameraRef = useRef()
@@ -16,9 +17,11 @@ const Entrance_Canvas = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false)
-        }, 2000)
+        }, 1000)
 
-        return () => clearTimeout(timer)
+        return () => {
+            clearTimeout(timer)
+        }
     }, [])
 
     return (
@@ -36,7 +39,7 @@ const Entrance_Canvas = () => {
                 }}
             >
                 <Suspense fallback={<Loader />}>
-                    <Environment files='./environment/sandsloot_1k.hdr' />
+                    <Environment files='./environment/woods_2k.hdr' />
 
                     <PerspectiveCamera
                         makeDefault
@@ -60,6 +63,11 @@ const Entrance_Canvas = () => {
                     {loading ? <Loader /> : <Entrance />}
                 </Suspense>
             </Canvas>
+
+            <Loading_Text
+                title='Entrance'
+                subtitle='The Gateway of Innovation'
+            />
         </m.div>
     )
 }

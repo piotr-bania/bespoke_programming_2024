@@ -8,6 +8,7 @@ import { Environment, OrbitControls, PerspectiveCamera } from '@react-three/drei
 import Room_1 from './Room_1'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../../animations/Loader'
+import Loading_Text from '../../text/Loading_Text'
 
 const Homepage_Canvas = () => {
     const cameraRef = useRef()
@@ -16,7 +17,7 @@ const Homepage_Canvas = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false)
-        }, 2000)
+        }, 1000)
 
         return () => clearTimeout(timer)
     }, [])
@@ -59,6 +60,11 @@ const Homepage_Canvas = () => {
                     {loading ? <Loader /> : <Room_1 />}
                 </Suspense>
             </Canvas>
+
+            <Loading_Text
+                title='Room 1'
+                subtitle='The Garden of Ideas'
+            />
         </m.div>
     )
 }

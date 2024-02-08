@@ -1,8 +1,10 @@
-import { useGLTF, Text, Float } from '@react-three/drei'
+import { useGLTF, Float } from '@react-three/drei'
 import { useRouter } from 'next/navigation'
+import { motion as m3d } from 'framer-motion-3d'
 
 const Entrance = () => {
     const scene = useGLTF('./models/scenes/entrance_scene.glb')
+    const cta = useGLTF('./models/scenes/cta.glb')
 
     const router = useRouter()
     const handleClick = () => {
@@ -19,22 +21,13 @@ const Entrance = () => {
                 speed={15}
                 rotationIntensity={0}
                 floatIntensity={1}
-                floatingRange={[-.1, .1]}
+                floatingRange={[-.05, .05]}
             >
-                <Text
-                    position={[0, 2, 0]}
-                    font='./fonts/neuropol.otf'
-                    fontSize={.25}
-                    color='white'
-                    anchorX='center'
-                    anchorY='middle'
-                    textAlign='center'
-                    maxWidth={1.5}
-                    lineHeight={1}
+                <m3d.primitive
+                    object={cta.scene}
+                    whileHover={{ scale: 1.1 }}
                     onClick={handleClick}
-                >
-                    Room 1: The Garden of Ideas
-                </Text>
+                />
             </Float>
         </group>
     )
