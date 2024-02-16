@@ -1,0 +1,27 @@
+@import '../../../globals.scss';
+
+.padlock_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 2 * $large);
+    height: calc(100vh - 2 * $large);
+    // backdrop-filter: grayscale(.5) blur(15px);
+    display: flex;
+    justify-content: center;
+
+    .text {
+        position: absolute;
+        bottom: 60vh;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        gap: $small;
+        margin: 0 $large;
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+    }
+}
