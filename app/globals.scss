@@ -1,16 +1,18 @@
 /* ---------- Fonts ---------- */
 @font-face {
-    font-family: 'Orbitron Black';
-    src: url(../public/fonts/Orbitron-Black.ttf);
+    font-family: 'Contralto Big Bold';
+    src: url(../public/fonts/ContraltoBig_Bold.woff);
 }
 
 @font-face {
-    font-family: 'Orbitron Regular';
-    src: url(../public/fonts/Orbitron-Regular.ttf);
+    font-family: 'Proxima Nova Light';
+    src: url(../public/fonts/Proxima_Nova_Light.otf);
 }
 
-$heading_font: 'Orbitron Black', sans-serif;
-$subheading_font: 'Orbitron Regular', sans-serif;
+$heading_font: 'Contralto Big Bold',
+sans-serif;
+$subheading_font: 'Proxima Nova Light',
+sans-serif;
 
 /* ---------- Variables ---------- */
 $indigo: #6526D1;
@@ -47,7 +49,9 @@ html {
 }
 
 body {
-    background: black;
+    background:$background;
+    color: $dark_grey;
+    font-size: $paragraph;
     margin: auto;
     overflow: hidden;
 }
@@ -60,31 +64,26 @@ body {
     height: 100vh;
 }
 
-h1 {
-    font-family: $heading_font;
-    font-weight: 900;
-    font-size: 3rem;
-}
-
-h2 {
-    font-family: $subheading_font;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
 h1,
-h2 {
-    text-transform: uppercase;
-    line-height: 1.1;
-    padding: 0;
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+h2,
+h3,
+h4 {
+    font-family: $heading_font;
+    color: $white;
 }
 
-.heading {
-    position: fixed;
-    bottom: 10vh;
-    left: 5vw;
-    color: white;
-    text-align: left;
+h1 {
+    font-size: $header_1;
+}
+
+h2 {
+    font-size: $header_2;
+}
+
+h3 {
+    font-size: $header_3;
+}
+
+h4 {
+    font-size: $header_4;
 }
