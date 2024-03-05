@@ -1,9 +1,9 @@
 'use client'
 
 import './Headings.scss'
-import '../animations/Text_Variants'
+import '../animations/Text'
 import { motion as m } from 'framer-motion'
-import { Heading_2_Variant } from '../animations/Text_Variants'
+import { Heading_2_Variant } from '../animations/Text'
 
 const Heading_2 = ({ h2Text, className }) => {
     return (

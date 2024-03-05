@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { AnimatePresence, motion as m } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 import Leave_Animation from './Leave_Animation'
 import Link from 'next/link'
 

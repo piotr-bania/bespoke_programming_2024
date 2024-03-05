@@ -1,12 +1,12 @@
 import { motion as m } from 'framer-motion'
-import { Page_Leave_Variant } from '../animations/Page_Transition'
+import { Page_Enter_Variant } from '../animations/Page_Transition'
 
-const Leave_Animation = ({ onAnimationComplete }) => {
+const Enter_Animation = ({ onAnimationComplete }) => {
     return (
         <m.div
             initial='hidden'
             animate='visible'
-            variants={Page_Leave_Variant}
+            variants={Page_Enter_Variant}
             onAnimationComplete={onAnimationComplete}
             style={{
                 position: 'absolute',
@@ -20,4 +20,4 @@ const Leave_Animation = ({ onAnimationComplete }) => {
     )
 }
 
-export default Leave_Animation
+export default Enter_Animation
