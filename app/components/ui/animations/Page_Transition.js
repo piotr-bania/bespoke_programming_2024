@@ -5,7 +5,7 @@ export const Page_Leave_Variant = {
     visible: {
         opacity: 1,
         transition: {
-            duration: .75,
+            duration: .5,
             ease: [0.22, 1, 0.36, 1]
         }
     }
@@ -18,7 +18,7 @@ export const Page_Enter_Variant = {
     visible: {
         opacity: 0,
         transition: {
-            duration: .75,
+            duration: .5,
             ease: [0.22, 1, 0.36, 1]
         }
     }
