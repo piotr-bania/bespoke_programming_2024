@@ -3,7 +3,7 @@ import Heading_1 from '../components/ui/headings/Heading_1'
 import Paragraph from '../components/ui/paragraphs/Paragraph'
 import Route_Change from '../components/ui/transitions/Route_Change'
 
-const Room_1 = () => {
+const About_Page = () => {
     return (
         <main>
             <Heading_1
@@ -24,4 +24,4 @@ const Room_1 = () => {
     )
 }
 
-export default Room_1
+export default About_Page
