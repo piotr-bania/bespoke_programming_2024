@@ -10,8 +10,8 @@ const Button = ({ buttonText, className }) => {
             className={`button ${className}`}
             initial='hidden'
             animate='visible'
-            whileHover='hover'
-            whileTap='rest'
+            // whileHover='hover'
+            // whileTap='rest'
             variants={Button_Variant}
             >
                 {buttonText}

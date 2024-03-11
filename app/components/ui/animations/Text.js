@@ -88,7 +88,7 @@ export const Paragraph_Variant = {
 
 export const Button_Variant = {
     hidden: {
-        scale: 0.5,
+        scale: .75,
         opacity: 0
     },
     visible: {
@@ -100,15 +100,15 @@ export const Button_Variant = {
         }
     },
     rest: {
-        scale: 1,
+        y: 0,
         transition: {
             type: 'spring',
-            stiffness: 300
+            stiffness: 100
         }
     },
     hover: {
-        scale: 1.1,
-        transition: {
+        y: -3,
+        transtion: {
             type: 'spring',
             stiffness: 300
         }

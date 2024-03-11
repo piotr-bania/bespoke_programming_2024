@@ -1,21 +1,21 @@
-import Hero_Section from './components/pages/home/Hero'
-import Why_Choose_Me_Section from './components/pages/home/Why_Choose_Me'
-import Services_Overview_Section from './components/pages/home/Services_Overview'
-import How_It_Works_Section from './components/pages/home/How_It_Works'
-import Success_Stories_Section from './components/pages/home/Success_Stories'
-import FAQ_Section from './components/pages/home/FAQ'
-import Contact_Section from './components/pages/home/Contact'
+import Hero from './components/pages/home/Hero'
+import Value_Proposition from './components/pages/home/Value_Proposition'
+import Services_Overview from './components/pages/home/Services_Overview'
+import Process_Explained from './components/pages/home/Process_Explained'
+import Recent_Work from './components/pages/home/Recent_Work'
+import FAQs from './components/pages/home/FAQs'
+import Call_To_Action from './components/pages/home/Call_To_Action'
 
 export default function Home() {
     return (
         <>          
-            <Hero_Section />
-            <Why_Choose_Me_Section />
-            <Services_Overview_Section />
-            <How_It_Works_Section />
-            <Success_Stories_Section />
-            <FAQ_Section />
-            <Contact_Section />
+            <Hero />
+            <Value_Proposition />
+            <Services_Overview />
+            <Process_Explained />
+            <Recent_Work />
+            <FAQs />
+            <Call_To_Action />
         </>
     )
 }
