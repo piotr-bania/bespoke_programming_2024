@@ -11,7 +11,7 @@
 
 $heading_font: 'Contralto Big Bold',
 sans-serif;
-$subheading_font: 'Proxima Nova Light',
+$paragraph_font: 'Proxima Nova Light',
 sans-serif;
 
 /* ---------- Variables ---------- */
@@ -22,6 +22,8 @@ $background: #07030F;
 $dark_grey: #A3A3A3;
 $light_grey: #D0D0D0;
 $white: #FFFFFF;
+
+$gradient: linear-gradient(135deg, #6526D1, #D02670);
 
 // ---------- Fluid fonts ----------
 $button: clamp(0.89rem, 0.33vw + 0.81rem, 1.11rem);
@@ -51,6 +53,7 @@ html {
 body {
     background:$background;
     color: $dark_grey;
+    font-family: $paragraph_font;
     font-size: $paragraph;
     margin: auto;
     overflow-x: hidden;
@@ -70,10 +73,12 @@ h3,
 h4 {
     font-family: $heading_font;
     color: $white;
+    margin: 0;
 }
 
 h1 {
     font-size: $header_1;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -86,6 +91,23 @@ h3 {
 
 h4 {
     font-size: $header_4;
+}
+
+button {
+    font-family: $paragraph_font;
+    font-size: $button;
+    text-transform: uppercase;
+    color: $white;
+    background: $gradient;
+    filter: contrast(1);
+    border: none;
+    padding: calc($large * .5) $large;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        filter: contrast(1.5);
+    }
 }
 
 section {
