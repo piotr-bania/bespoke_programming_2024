@@ -3,22 +3,22 @@ import Paragraph from '../../ui/paragraphs/Paragraph'
 import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
 
-const Recent_Work = () => {
+const About_Me = () => {
     return (
-        <section id='recent_work'>
+        <section id='about_me'>
             <Heading_3
-                h3Text='Explore My Recent Projects'
+                h3Text='The Person Behind the Projects'
                 className='heading_3'
             />
             
             <Paragraph
-                pText="Dive into a curated selection of my latest projects, where innovative design meets functionality. Each project showcases my dedication to crafting unique web experiences that drive business success. See for yourself how I bring digital visions to life."
+                pText="Discover the journey, passion, and dedication that fuel my commitment to bringing your digital dreams to life. From my roots in web development to the ethos that drives me today, learn how I blend technical expertise with a deeply personal approach to every project."
                 className='paragraph'
             />
 
-            <Route_Change href='/portfolio'>
+            <Route_Change href='/about'>
                 <Button
-                    buttonText='View My Portfolio'
+                    buttonText='Get to Know Me'
                     className='button'
                 />
             </Route_Change>
@@ -26,4 +26,4 @@ const Recent_Work = () => {
     )
 }
 
-export default Recent_Work
+export default About_Me
