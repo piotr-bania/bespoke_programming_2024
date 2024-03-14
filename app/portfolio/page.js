@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from '../components/pages/portfolio/Hero'
 
 const Portfolio_Page = () => {
     return (
-        <h1>Portfolio Page</h1>
+        <>
+            <Hero />
+        </>
     )
 }
 

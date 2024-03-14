@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from '../components/pages/pricing/Hero'
 
 const Pricing_Page = () => {
     return (
-        <h1>Pricing Page</h1>
+        <>
+            <Hero />
+        </>
     )
 }
 

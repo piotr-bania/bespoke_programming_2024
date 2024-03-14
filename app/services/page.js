@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from '../components/pages/services/Hero'
 
 const Services_Page = () => {
     return (
-        <h1>Services Page</h1>
+        <>
+            <Hero />
+        </>
     )
 }
 

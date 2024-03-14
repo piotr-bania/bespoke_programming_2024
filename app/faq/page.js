@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from '../components/pages/faq/Hero'
 
 const FAQ_Page = () => {
     return (
-        <h1>FAQ Page</h1>
+        <>
+            <Hero />
+        </>
     )
 }
 

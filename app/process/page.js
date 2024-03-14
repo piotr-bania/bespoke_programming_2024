@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from '../components/pages/process/Hero'
 
 const Process_Page = () => {
     return (
-        <h1>Process Page</h1>
+        <>
+            <Hero />
+        </>
     )
 }
 

@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from '../components/pages/contact/Hero'
 
 const Contact_Page = () => {
     return (
-        <h1>Contact Page</h1>
+        <>
+            <Hero />
+        </>
     )
 }
 
