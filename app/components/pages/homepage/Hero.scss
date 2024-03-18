@@ -1,0 +1,21 @@
+@import '../../../globals.scss';
+
+.hero_section {
+    width: 100%;
+    height: 100dvh;
+
+    .hero_canvas {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100dvh;
+        z-index: -1;
+    }
+
+    #hero_section {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
