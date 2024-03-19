@@ -99,6 +99,13 @@ p {
     padding: 0;
 }
 
+a {
+    font-size: $button;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $dark_grey;
+}
+
 button {
     font-family: $paragraph_font;
     font-size: $button;
@@ -108,7 +115,7 @@ button {
     filter: contrast(1);
     border: none;
     border-radius: $border_radius_small;
-    padding: calc($large * .5) $large;
+    padding: calc($small * .5) $small;
     cursor: pointer;
     transition: .3s;
 

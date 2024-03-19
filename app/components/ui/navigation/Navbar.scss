@@ -1,2 +1,19 @@
 @import '../../../globals.scss';
 
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: $large;
+    }
+}

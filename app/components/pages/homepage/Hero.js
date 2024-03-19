@@ -26,13 +26,6 @@ const Hero = () => {
                     pText="Discover how my unique web development approach empowers your business's growth from day one."
                     className='paragraph'
                 />
-
-                <Route_Change href='/contact'>
-                    <Button
-                        buttonText='Start Your Journey'
-                        className='button'
-                    />
-                </Route_Change>
             </section>
         </div>
     )
