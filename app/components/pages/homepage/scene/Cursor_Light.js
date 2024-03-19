@@ -27,7 +27,7 @@ const Cursor_Light = () => {
             position={[lightPosition.x, lightPosition.y, lightPosition.z]}
             intensity={1}
             distance={5}
-            decay={1.5}
+            decay={2.5}
             color='#FFFFFF'
             transition={{ duration: 0.75, delay: 0.25, ease: [0.33, 1, 0.68, 1] }}
         />

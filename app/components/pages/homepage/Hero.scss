@@ -16,6 +16,65 @@
         position: absolute;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 100dvh;
+
+        .heading_1 {
+            grid-area: 1 / 7 / 2 / 12;
+            text-align: left;
+            display: flex;
+            align-self: flex-end;
+        }
+
+        .heading_2 {
+            grid-area: 2 / 7 / 3 / 11;
+            text-align: right;
+            align-self: flex-end;
+        }
+
+        .paragraph {
+            grid-area: 3 / 4 / 4 / 8;
+            text-align: left;
+            align-self: flex-end;
+        }
+
+        .button {
+            grid-area: 4 / 4 / 5 / 8;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .heading_1 {
+                grid-area: 1 / 1 / 2 / 9;
+            }
+
+            .heading_2 {
+                grid-area: 2 / 1 / 3 / 9;
+            }
+
+            .paragraph {
+                grid-area: 3 / 1 / 4 / 9;
+            }
+
+            .button {
+                grid-area: 4 / 1 / 5 / 9;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .heading_1 {
+                grid-area: 1 / 1 / 2 / 5;
+            }
+
+            .heading_2 {
+                grid-area: 2 / 1 / 3 / 5;
+            }
+
+            .paragraph {
+                grid-area: 3 / 1 / 4 / 5;
+            }
+
+            .button {
+                grid-area: 4 / 1 / 5 / 5;
+            }
+        }
     }
 }

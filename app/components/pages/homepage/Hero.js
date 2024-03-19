@@ -9,7 +9,7 @@ import Button from '../../ui/buttons/Button'
 const Hero = () => {
     return (
         <div className='hero_section'>
-            <Hero_Canvas />
+            {/* <Hero_Canvas /> */}
 
             <section id='hero_section' >
                 <Heading_1
@@ -23,7 +23,7 @@ const Hero = () => {
                 />
 
                 <Paragraph
-                    pText="Discover how my unique web development approach empowers your business's growth from day one. With no initial investment and premium hosting included, I'm dedicated to turning your digital ambitions into reality. Dive into a world where your vision comes to life, all with the support you need to thrive online."
+                    pText="Discover how my unique web development approach empowers your business's growth from day one."
                     className='paragraph'
                 />
 

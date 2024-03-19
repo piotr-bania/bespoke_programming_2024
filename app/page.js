@@ -12,14 +12,14 @@ export default function Home() {
     return (
         <>          
             <Hero />
-            <Value_Proposition />
+            {/* <Value_Proposition />
             <Services_Overview />
             <Transparent_Pricing />
             <Process_Explained />
             <Recent_Work />
             <FAQs />
             <Call_To_Action />
-            <About_Me />
+            <About_Me /> */}
         </>
     )
 }

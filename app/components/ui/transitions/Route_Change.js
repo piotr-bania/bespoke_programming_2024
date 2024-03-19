@@ -26,7 +26,7 @@ const Route_Change = ({ href, children, onClick }) => {
 
     return (
         <>
-            <Link href={href} passHref onClick={handleClick}>
+            <Link href={href} passHref onClick={handleClick} className='button' >
                 {children}
             </Link>
             
