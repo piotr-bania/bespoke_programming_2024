@@ -1,45 +1,65 @@
+'use client'
+
 import './Navbar.scss'
+import { motion as m } from 'framer-motion'
+import { Navbar_Variant } from '../../ui/animations/Navigation'
 import Image from 'next/image'
 import Route_Change from '../transitions/Route_Change'
 import Button from '../buttons/Button'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
-        <section id='navbar'>
-            <Route_Change href='/'>
-                <Image
-                    src='/svg/logo.svg'
-                    alt='logo'
-                    width={60}
-                    height={60}
-                />
-            </Route_Change>
+        <m.nav
+            className='navbar'
+            initial='hidden'
+            animate='visible'
+            variants={Navbar_Variant}
+        >
+            <section id='navbar'>
+                <Link href='/' className='logo'>
+                    <Image
+                        src='/svg/logo.svg'
+                        alt='logo'
+                        width={50}
+                        height={50}
+                    />
+                </Link>
 
-            <div className='links'>
-                <Route_Change href='/services'>
-                    Services
-                </Route_Change>
+                <div className='links'>
+                    <Route_Change href='/services'>
+                        Services
+                    </Route_Change>
 
-                <Route_Change href='/portfolio'>
-                    Portfolio
-                </Route_Change>
+                    <Route_Change href='/pricing'>
+                        Pricing
+                    </Route_Change>
 
-                <Route_Change href='/about'>
-                    About
-                </Route_Change>
+                    <Route_Change href='/about'>
+                        About
+                    </Route_Change>
 
-                <Route_Change href='/blog'>
-                    Blog
-                </Route_Change>
-            </div>
+                    <Route_Change href='/portfolio'>
+                        Portfolio
+                    </Route_Change>
 
-            <Route_Change href='/contact'>
+                    <Route_Change href='/contact'>
+                        Contact
+                    </Route_Change>
+
+                    <Route_Change href='/faq'>
+                        FAQ
+                    </Route_Change>
+                </div>
+
+                <Route_Change href='/contact' className='cta'>
                     <Button
                         buttonText='Start Your Journey'
-                        className='button'
+                        
                     />
                 </Route_Change>
-        </section>
+            </section>
+        </m.nav>
     )
 }
 

@@ -25,7 +25,7 @@ const Route_Change = ({ href, children, onClick }) => {
     }
 
     return (
-        <>
+        <div className='cta'>
             <Link href={href} passHref onClick={handleClick} className='button' >
                 {children}
             </Link>
@@ -33,7 +33,7 @@ const Route_Change = ({ href, children, onClick }) => {
             <AnimatePresence mode='wait'>
                 {isAnimating && <Leave_Animation onAnimationComplete={onAnimationComplete} />}
             </AnimatePresence>
-        </>
+        </div>
     )
 }
 

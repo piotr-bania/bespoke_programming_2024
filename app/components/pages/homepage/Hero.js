@@ -1,15 +1,33 @@
+'use client'
+
 import './Hero.scss'
+import { motion as m, AnimatePresence } from 'framer-motion'
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import Hero_Canvas from './scene/Hero_Canvas'
 import Heading_1 from '../../ui/headings/Heading_1'
 import Heading_2 from '../../ui/headings/Heading_2'
-import Paragraph from '../../ui/paragraphs/Paragraph'
-import Route_Change from '../../ui/transitions/Route_Change'
-import Button from '../../ui/buttons/Button'
+import { Paragraph_Variant } from '../../ui/animations/Text'
 
 const Hero = () => {
+    const [index, setIndex] = useState(0)
+    const paragraph = [
+        "Discover how my unique web development approach empowers your business's growth from day one.",
+        "With no initial investment and premium hosting included, I'm dedicated to turning your digital ambitions into reality.",
+        "Dive into a world where your vision comes to life, all with the support you need to thrive online."
+    ]
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prevIndex) => (prevIndex + 1) % paragraph.length)
+        }, 5000)
+
+        return () => clearInterval(interval)
+    }, [])
+
     return (
         <div className='hero_section'>
-            {/* <Hero_Canvas /> */}
+            <Hero_Canvas />
 
             <section id='hero_section' >
                 <Heading_1
@@ -22,9 +40,25 @@ const Hero = () => {
                     className='heading_2'
                 />
 
-                <Paragraph
-                    pText="Discover how my unique web development approach empowers your business's growth from day one."
-                    className='paragraph'
+                <AnimatePresence>
+                    <m.p
+                        key={index}
+                        variants={Paragraph_Variant}
+                        initial='hidden'
+                        animate='visible'
+                        exit='hidden'
+                        className='paragraph'
+                    >
+                        {paragraph[index]}
+                    </m.p>
+                </AnimatePresence>
+
+                <Image
+                    src='/svg/arrow.svg'
+                    className='arrow'
+                    alt='Arrow'
+                    width={25}
+                    height={25}
                 />
             </section>
         </div>

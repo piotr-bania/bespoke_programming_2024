@@ -1,19 +1,31 @@
 @import '../../../globals.scss';
 
-#navbar {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 100;
 
-    .links {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: $large;
+    #navbar {
+        .logo {
+            grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .links {
+            grid-area: 1 / 8 / 2 / 18;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cta {
+            grid-area: 1 / 20 / 2 / 24;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
 }
