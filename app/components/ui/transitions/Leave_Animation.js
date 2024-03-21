@@ -14,7 +14,7 @@ const Leave_Animation = ({ onAnimationComplete }) => {
                 height: '100%',
                 top: 0,
                 left: 0,
-                backgroundColor: '#07030F',
+                backgroundColor: '#0E051E',
                 zIndex: -1
             }}
         />
