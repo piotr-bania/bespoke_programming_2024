@@ -17,14 +17,17 @@ const Navbar = () => {
             variants={Navbar_Variant}
         >
             <section id='navbar'>
-                <Link href='/' className='logo'>
-                    <Image
-                        src='/svg/logo.svg'
-                        alt='logo'
-                        width={50}
-                        height={50}
-                    />
-                </Link>
+                <div className='logo'>
+                    <Route_Change href='/'>
+                        <Image
+                            className='logo'
+                            src='/svg/logo.svg'
+                            alt='logo'
+                            width={50}
+                            height={50}
+                        />
+                    </Route_Change>
+                </div>
 
                 <div className='links'>
                     <Route_Change href='/services'>

@@ -2,15 +2,15 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { AnimatePresence } from 'framer-motion'
 import Leave_Animation from './Leave_Animation'
-import Link from 'next/link'
 
 const Route_Change = ({ href, children, onClick }) => {
     const router = useRouter()
     const [isAnimating, setIsAnimating] = useState(false)
 
-    const onAnimationComplete = () => {
+    const onAnimationComplete   = () => {
         setIsAnimating(false)
         router.push(href)
     }
@@ -26,12 +26,12 @@ const Route_Change = ({ href, children, onClick }) => {
 
     return (
         <div className='cta'>
-            <Link href={href} passHref onClick={handleClick} className='button' >
+            <Link href={href} onClick={handleClick} passHref className='button' >
                 {children}
             </Link>
             
             <AnimatePresence mode='wait'>
-                {isAnimating && <Leave_Animation onAnimationComplete={onAnimationComplete} />}
+                {isAnimating && <Leave_Animation onAnimationComplete={onAnimationComplete  } />}
             </AnimatePresence>
         </div>
     )

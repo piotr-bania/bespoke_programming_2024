@@ -9,12 +9,13 @@ const Leave_Animation = ({ onAnimationComplete }) => {
             variants={Page_Leave_Variant}
             onAnimationComplete={onAnimationComplete}
             style={{
-                position: 'absolute',
+                position: 'fixed',
                 width: '100%',
                 height: '100%',
                 top: 0,
                 left: 0,
-                backgroundColor: '#07030F'
+                backgroundColor: '#07030F',
+                zIndex: -1
             }}
         />
     )

@@ -34,7 +34,7 @@ const Hero = () => {
                     h1Text='Elevate Your Digital Presence'
                     className='heading_1'
                 />
-                
+
                 <Heading_2
                     h2Text='Without the Financial Strain'
                     className='heading_2'

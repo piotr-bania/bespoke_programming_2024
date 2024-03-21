@@ -1,25 +1,25 @@
 export const Page_Leave_Variant = {
     hidden: {
-        opacity: 0,
+        height: '0%',
     },
     visible: {
-        opacity: 1,
+        height: '100%',
         transition: {
-            duration: .5,
-            ease: [0.22, 1, 0.36, 1]
+            duration: 1,
+            ease: [.22, 1, .36, 1]
         }
     }
 }
 
 export const Page_Enter_Variant = {
     hidden: {
-        opacity: 1,
+        height: '100%',
     },
     visible: {
-        opacity: 0,
+        height: '0%',
         transition: {
-            duration: .5,
-            ease: [0.22, 1, 0.36, 1]
+            duration: 1,
+            ease: [.22, 1, .36, 1]
         }
     }
 }
