@@ -1,3 +1,4 @@
+import './Value_Proposition.scss'
 import Heading_3 from '../../ui/headings/Heading_3'
 import Paragraph from '../../ui/paragraphs/Paragraph'
 

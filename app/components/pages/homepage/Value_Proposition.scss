@@ -1,0 +1,15 @@
+@import '../../../globals.scss';
+
+#why_choose_me {
+    background: #A3A3A310;
+    padding: calc($large * 4) 0;
+    text-align: center;
+
+    .heading_3 {
+        grid-area: 1 / 6 / 2 / 20;
+    }
+
+    .paragraph {
+        grid-area: 2 / 8 / 3 / 18;
+    }
+}
