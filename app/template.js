@@ -1,19 +1,10 @@
-'use client'
-
-import { useState } from 'react'
-import Enter_Animation from './components/ui/transitions/Enter_Animation'
+import Animation_Wrapper from './components/ui/transitions/Animation_Wrapper'
 
 const Template = ({ children }) => {
-    const [isAnimating, setIsAnimating] = useState(true)
-    const handleAnimationComplete = () => {
-        setIsAnimating(false)
-    }
-
     return (
-        <>
-            {isAnimating && <Enter_Animation onAnimationComplete={handleAnimationComplete} />}
+        <Animation_Wrapper>
             {children}
-        </>
+        </Animation_Wrapper>
     )
 }
 

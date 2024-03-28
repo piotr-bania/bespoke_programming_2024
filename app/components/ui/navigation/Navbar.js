@@ -6,7 +6,6 @@ import { Navbar_Variant } from '../../ui/animations/Navigation'
 import Image from 'next/image'
 import Route_Change from '../transitions/Route_Change'
 import Button from '../buttons/Button'
-import Link from 'next/link'
 
 const Navbar = () => {
     return (
@@ -58,7 +57,6 @@ const Navbar = () => {
                 <Route_Change href='/contact' className='cta'>
                     <Button
                         buttonText='Start Your Journey'
-                        
                     />
                 </Route_Change>
             </section>

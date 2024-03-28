@@ -1,21 +1,14 @@
+import './Animations.scss'
 import { motion as m } from 'framer-motion'
 import { Page_Enter_Variant } from '../animations/Page_Transition'
 
 const Enter_Animation = () => {
     return (
         <m.div
+            className='animation_container'
             animate='visible'
             exit='hidden'
             variants={Page_Enter_Variant}
-            style={{
-                position: 'fixed',
-                width: '100%',
-                height: '100%',
-                top: 0,
-                left: 0,
-                backgroundColor: '#0E051E',
-                zIndex: 1
-            }}
         />
     )
 }
