@@ -17,9 +17,9 @@ export default function Home() {
             <Transparent_Pricing />
             <Process_Explained />
             <Recent_Work />
-            <FAQs />
-            <Call_To_Action />
-            <About_Me />
+            {/* <FAQs /> */}
+            {/* <Call_To_Action /> */}
+            {/* <About_Me /> */}
         </>
     )
 }

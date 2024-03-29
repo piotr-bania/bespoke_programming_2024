@@ -1,0 +1,42 @@
+@import '../../../globals.scss';
+
+#recent_work {
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: calc($small * .5);
+
+        .paragraph {
+            text-align: left;
+            display: flex;
+            align-self: flex-end;
+            background: linear-gradient(180deg, $indigo 0%, $magenta 100%);
+            background-size: 2px;
+            background-repeat: no-repeat;
+            padding-left: calc($small * .5);
+        }
+    }
+
+    div .heading {
+        margin: 0;
+    }
+
+    .div_1 {
+        grid-area: 3 / 5 / 4 / 13;
+    }
+
+    .div_2 {
+        grid-area: 3 / 13 / 4 / 21;
+    }
+
+    .div_3 {
+        grid-area: 5 / 8 / 6 / 18;
+        gap: $small;
+        padding-top: $large;
+        text-align: center;
+
+        .cta {
+            margin: auto;
+        }
+    }
+}

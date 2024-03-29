@@ -14,10 +14,10 @@ export default function RootLayout({ children }) {
         <html lang='en'>
             <body suppressHydrationWarning={true}>
                 {/* <Homepage_Loader_Wrapper> */}
-                        <Navbar />
-                        <Strips />
-                        {children}
-                        <Footer />
+                    <Navbar />
+                    <Strips />
+                    {children}
+                    <Footer />
                 {/* </Homepage_Loader_Wrapper> */}
             </body>
         </html>

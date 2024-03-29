@@ -1,0 +1,46 @@
+@import '../../../globals.scss';
+
+#transparent_pricing {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        text-align: center;
+        gap: $small;
+
+        img {
+            width: 110px;
+            height: auto;
+            align-self: center;
+        }
+    }
+
+    .div_1 {
+        grid-area: 3 / 4 / 4 / 10;
+    }
+
+    .div_2 {
+        grid-area: 3 / 10 / 4 / 16;
+        background: linear-gradient(90deg, #6526D130, #D0267030);
+        border: 1px solid #6526D150;
+
+        &:hover {
+            border: 1px solid $indigo;
+        }
+    }
+
+    .div_3 {
+        grid-area: 3 / 16 / 4 / 22;
+    }
+
+    .div_4 {
+        grid-area: 4 / 8 / 5 / 18;
+        gap: $small;
+        margin-top: $large;
+
+        .cta {
+            margin: auto;
+        }
+    }
+}

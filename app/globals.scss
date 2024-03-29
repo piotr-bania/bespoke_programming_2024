@@ -27,7 +27,7 @@ $white: #FFFFFF;
 
 $gradient: linear-gradient(90deg, $indigo, $magenta);
 $gradient_paragraph: linear-gradient($indigo 0%, $magenta 100%);
-$gradient_grey: linear-gradient(90deg, $background_lighter, $background);
+$gradient_grey: linear-gradient(90deg, #0E051E90, #07030F10);
 
 // ---------- Fluid fonts ----------
 $button: clamp(0.8rem, 0.16vw + 0.76rem, 0.95rem);
@@ -142,18 +142,60 @@ button {
     height: max-content;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.indigo {
+    color: $indigo;
+}
+
+.magenta {
+    color: $magenta;
+}
+
+.blend {
+    color: $blend;
+}
+
+.overlay {
+    background: $gradient_grey;
+    min-height: 300px;
+    padding: $large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: $large;
+    backdrop-filter: blur(5px);
+    border: 1px solid #6526D125;
+    border-radius: $border_radius_large;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        border: 1px solid $indigo;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        gap: $small;
+    }
+
+    img {
+        width: 110px;
+        height: auto;
+        display: flex;
+        align-self: flex-start;
+    }
+}
+
 section {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: auto;
     padding: $large 0;
     gap: $small;
-
-    // border: 1px dashed cyan;
-    // :nth-child(odd),
-    // :nth-child(even) {
-    //     border: 1px dashed cyan;
-    // }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         grid-template-columns: repeat(8, 1fr);

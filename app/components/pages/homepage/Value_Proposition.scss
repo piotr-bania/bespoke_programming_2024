@@ -5,11 +5,11 @@
     padding: calc($large * 4) 0;
     text-align: center;
 
-    .heading_3 {
+    .heading {
         grid-area: 1 / 6 / 2 / 20;
     }
 
     .paragraph {
-        grid-area: 2 / 8 / 3 / 18;
+        grid-area: 2 / 4 / 3 / 22;
     }
 }
