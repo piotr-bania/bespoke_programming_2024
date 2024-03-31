@@ -7,8 +7,8 @@ import Image from 'next/image'
 import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
 import Project_Canvas from '../../canvases/Project_Canvas'
-import Featured_Project_1 from '../../canvases/projects/Featured_Project_1'
-import Featured_Project_2 from '../../canvases/projects/Featured_Project_2'
+import Project from '../../canvases/projects/Project'
+import Featured_Project_2 from '../../canvases/projects/Project'
 
 const Recent_Work = () => {
     return (
@@ -23,31 +23,21 @@ const Recent_Work = () => {
                 className='subheading uppercase'
             />
 
-            <div className='div div_1'>
-                <Heading_4
-                    className='heading'
-                    h4Text='Mara River Capital'
-                />
-                <p>Website redesign for a Tanzanian hedge fund</p>
-                
-                <Link href='https://mara-river-capital-redesign-v2.vercel.app/' target='_blank'>
-                    {/* <Project_Canvas projectComponent={<Featured_Project_1 />} /> */}
-                </Link>
-                <p className='paragraph'>Website redesign for a Tanzanian hedge fund, where I utilized CSS, Sass, React, Next, GLSL, Three.js, and React Three Fiber to create a captivating 3D experience.</p>
-            </div>
+            <Project
+                className={'div_1'}
+                title='Mara River Capital'
+                description='Website redesign for a Tanzanian hedge fund'
+                url='https://mara-river-capital-redesign-v2.vercel.app/'
+                detailedDescription='Website redesign for a Tanzanian hedge fund, where I utilized CSS, Sass, React, Next, GLSL, Three.js, and React Three Fiber to create a captivating 3D experience.'
+            />
 
-            <div className='div div_2'>
-                <Heading_4
-                    className='heading'
-                    h4Text='Tsunami Clapham'
-                />
-                <p>Website redesign for a London-based restaurant</p>
-
-                <Link href='https://tsunami-clapham-redesign.vercel.app/' target='_blank'>
-                    <Project_Canvas projectComponent={<Featured_Project_2 />} />
-                </Link>
-                <p className='paragraph'>Website redesign for a London-based restaurant, where I utilized CSS, Sass, React, and Next.js to create a visually stunning and user-friendly experience.</p>
-            </div>
+            <Project
+                className={'div_2'}
+                title='Tsunami Clapham'
+                description='Website redesign for a London-based restaurant'
+                url='https://tsunami-clapham-redesign.vercel.app/'
+                detailedDescription='Website redesign for a London-based restaurant, where I utilized CSS, Sass, React, and Next.js to create a visually stunning and user-friendly experience.'
+            />
 
             <div className='div div_3'>
                 <Heading_4

@@ -11,11 +11,11 @@ import About_Me from './components/pages/homepage/About_Me'
 export default function Home() {
     return (
         <>          
-            <Hero />
+            {/* <Hero />
             <Value_Proposition />
             <Services_Overview />
             <Transparent_Pricing />
-            <Process_Explained />
+            <Process_Explained /> */}
             <Recent_Work />
             {/* <FAQs /> */}
             {/* <Call_To_Action /> */}

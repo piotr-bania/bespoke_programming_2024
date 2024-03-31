@@ -4,6 +4,7 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
 import { motion as m } from 'framer-motion'
+import Project from './projects/Project'
 
 const Project_Canvas = ({ projectComponent }) => {
     return (
@@ -15,7 +16,7 @@ const Project_Canvas = ({ projectComponent }) => {
         >
             <Canvas>
                 <Suspense fallback={null}>
-                    <PerspectiveCamera makeDefault position={[0, 0, 4]} />
+                    <PerspectiveCamera makeDefault position={[0, 0, 15]} />
                     <ambientLight intensity={1.5} />
                     {projectComponent}
                 </Suspense>
