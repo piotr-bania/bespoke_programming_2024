@@ -20,10 +20,10 @@ const Transparent_Pricing = () => {
 
             <div className='overlay div_1'>
                 <Image
-                    src='/svg/padlock.svg'
+                    src='/images/pricing/startup.png'
                     alt='Premium Hosting'
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                 />
                 <div className='text'>
                     <h4>Startup Plan<br /><abbr className='indigo'>£400/month</abbr></h4>
@@ -35,10 +35,10 @@ const Transparent_Pricing = () => {
 
             <div className='overlay div_2'>
                 <Image
-                    src='/svg/padlock.svg'
+                    src='/images/pricing/business.png'
                     alt='Premium Hosting'
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                 />
                 <div className='text'>
                     <h4>Business Plan<br /><abbr className='magenta'>£600/month</abbr></h4>
@@ -50,10 +50,10 @@ const Transparent_Pricing = () => {
 
             <div className='overlay div_3'>
                 <Image
-                    src='/svg/padlock.svg'
+                    src='/images/pricing/enterprise.png'
                     alt='Premium Hosting'
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                 />
                 <div className='text'>
                     <h4>Enterprise Plan<br /><abbr className='indigo'>£800/month</abbr></h4>

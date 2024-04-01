@@ -26,10 +26,10 @@ const Services_Overview = () => {
                     />
                 </div>
                 <Image
-                    src='/svg/padlock.svg'
+                    src='/images/services/hosting.png'
                     alt='Premium Hosting'
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                 />
             </div>
 
@@ -41,10 +41,10 @@ const Services_Overview = () => {
                     />
                 </div>
                 <Image
-                    src='/svg/padlock.svg'
+                    src='/images/services/design.png'
                     alt='Premium Hosting'
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                 />
             </div>
 
@@ -56,10 +56,10 @@ const Services_Overview = () => {
                     />
                 </div>
                 <Image
-                    src='/svg/padlock.svg'
+                    src='/images/services/support.png'
                     alt='Premium Hosting'
-                    width={100}
-                    height={100}
+                    width={500}
+                    height={500}
                 />
             </div>
 

@@ -1,6 +1,7 @@
 import './Process_Explained.scss'
 import Heading_2 from '../../ui/headings/Heading_2'
 import Paragraph from '../../ui/paragraphs/Paragraph'
+import Image from 'next/image'
 import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
 import Heading_4 from '../../ui/headings/Heading_4'
@@ -20,7 +21,12 @@ const Process_Explained = () => {
             />
 
             <div className='overlay div div_1'>
-                <Heading_1 h1Text='1' />
+                <Image
+                    src='/images/process/discovery_and_consultation.png'
+                    alt='Premium Hosting'
+                    width={500}
+                    height={500}
+                />
                 <Heading_4
                     h4Text='Discovery and Consultation:'
                 />
@@ -30,7 +36,12 @@ const Process_Explained = () => {
             </div>
 
             <div className='overlay div div_2'>
-                <Heading_1 h1Text='2' />
+                <Image
+                    src='/images/process/design_and_development.png'
+                    alt='Premium Hosting'
+                    width={500}
+                    height={500}
+                />
                 <Heading_4
                     h4Text='Design and Development:'
                 />
@@ -40,7 +51,12 @@ const Process_Explained = () => {
             </div>
 
             <div className='overlay div div_3'>
-                <Heading_1 h1Text='3' />
+                <Image
+                    src='/images/process/launch_and_growth.png'
+                    alt='Premium Hosting'
+                    width={500}
+                    height={500}
+                />
                 <Heading_4
                     h4Text='Launch and Growth:'
                 />
@@ -50,7 +66,12 @@ const Process_Explained = () => {
             </div>
 
             <div className='overlay div div_4'>
-                <Heading_1 h1Text='4' />
+                <Image
+                    src='/images/process/enhancement.png'
+                    alt='Premium Hosting'
+                    width={500}
+                    height={500}
+                />
                 <Heading_4
                     h4Text='Continual Enhancement:'
                 />
