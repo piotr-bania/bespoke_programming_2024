@@ -1,14 +1,11 @@
 import './Recent_Work.scss'
 import Heading_2 from '../../ui/headings/Heading_2'
-import Heading_4 from '../../ui/headings/Heading_4'
 import Paragraph from '../../ui/paragraphs/Paragraph'
-import Link from 'next/link'
-import Image from 'next/image'
+import Project from '../../experiences/projects/Project'
+import Wave_Image from '../../experiences/scene_elements/Wave_Image'
+import Heading_4 from '../../ui/headings/Heading_4'
 import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
-import Project_Canvas from '../../canvases/Project_Canvas'
-import Project from '../../canvases/projects/Project'
-import Featured_Project_2 from '../../canvases/projects/Project'
 
 const Recent_Work = () => {
     return (
@@ -25,18 +22,22 @@ const Recent_Work = () => {
 
             <Project
                 className={'div_1'}
-                title='Mara River Capital'
-                description='Website redesign for a Tanzanian hedge fund'
+                title='Tsunami Clapham'
+                shortDescription='Website redesign for a Tanzanian hedge fund'
+                technologies='React, Next.js, CSS, Sass, GLSL, Three.js, React Three Fiber'
                 url='https://mara-river-capital-redesign-v2.vercel.app/'
                 detailedDescription='Website redesign for a Tanzanian hedge fund, where I utilized CSS, Sass, React, Next, GLSL, Three.js, and React Three Fiber to create a captivating 3D experience.'
+                projectComponent={<Wave_Image textureUrl='./images/projects/tsunami.jpg' />}
             />
 
             <Project
                 className={'div_2'}
-                title='Tsunami Clapham'
-                description='Website redesign for a London-based restaurant'
+                title='Yamamomo Dulwich'
+                shortDescription='Website redesign for a London-based restaurant'
+                technologies='React, Next.js, CSS, Sass'
                 url='https://tsunami-clapham-redesign.vercel.app/'
                 detailedDescription='Website redesign for a London-based restaurant, where I utilized CSS, Sass, React, and Next.js to create a visually stunning and user-friendly experience.'
+                projectComponent={<Wave_Image textureUrl='./images/projects/yamamomo.jpg' />}
             />
 
             <div className='div div_3'>

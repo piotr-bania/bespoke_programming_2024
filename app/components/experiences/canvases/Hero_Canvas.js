@@ -2,7 +2,7 @@
 
 import { Environment, PerspectiveCamera } from '@react-three/drei'
 import { Canvas, useThree, useFrame } from '@react-three/fiber'
-import Cursor_Light from './Cursor_Light'
+import Cursor_Light from '../scene_elements/Cursor_Light'
 import Hero_Model from './Hero_Model'
 
 const Hero_Canvas = () => {
