@@ -1,4 +1,5 @@
 import './globals.scss'
+import './styles/Sections.scss'
 import Navbar from './components/ui/navigation/Navbar'
 import Strips from './components/ui/strips/Strips'
 import Footer from './components/ui/navigation/Footer'

@@ -3,8 +3,8 @@
 import { useRef, useState, useEffect } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import wave_vert from '../../../public/shaders/wave.vert'
-import wave_frag from '../../../public/shaders/wave.frag'
+import wave_vert from '../../../../public/shaders/wave.vert'
+import wave_frag from '../../../../public/shaders/wave.frag'
 import { useTexture } from '@/app/hooks/useTexture'
 
 const Wave_Image = ({ position = [0, 0, 0], size = 1, textureUrl }) => {

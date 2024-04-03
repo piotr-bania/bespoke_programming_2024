@@ -189,39 +189,3 @@ button {
         align-self: flex-start;
     }
 }
-
-section {
-    display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: auto;
-    padding: $large 0;
-    gap: $small;
-
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        grid-template-columns: repeat(8, 1fr);
-        padding: $medium;
-    }
-
-    @media screen and (max-width: 767px) {
-        grid-template-columns: repeat(4, 1fr);
-        padding: $small;
-    }
-}
-
-.container_large {
-    padding: $large;
-    border-radius: $border_radius_large;
-    background: $gradient_grey;
-}
-
-.container_medium {
-    padding: $medium;
-    border-radius: $border_radius_medium;
-    background: $gradient_grey;
-}
-
-.container_small {
-    padding: $small;
-    border-radius: $border_radius_small;
-    background: $gradient_grey;
-}

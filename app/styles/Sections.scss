@@ -1,0 +1,19 @@
+@import '../globals.scss';
+
+section {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: auto;
+    padding: $large 0;
+    gap: $small;
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        grid-template-columns: repeat(8, 1fr);
+        padding: $medium;
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(4, 1fr);
+        padding: $small;
+    }
+}
