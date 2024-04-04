@@ -21,8 +21,7 @@ const Navbar = () => {
 
     const handleHamburgerClick = () => {
         if (isOpen) {
-            setIsOpen('fading')
-            setTimeout(() => setIsOpen(false), 750)
+            closeMenu()
         } else {
             setIsOpen(true)
         }
@@ -33,6 +32,7 @@ const Navbar = () => {
             document.body.style.overflowY = 'hidden'
         } else {
             document.body.style.overflowY = 'visible'
+            closeMenu()
         }
             return () => document.body.style.overflowY = 'visible'
     }, [isOpen]) 
