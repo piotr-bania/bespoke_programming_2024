@@ -5,7 +5,15 @@
         display: flex;
         flex-direction: column;
         gap: calc($small * .5);
-        // text-align: center;
+
+        .project_canvas {
+            filter: grayscale(80%);
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
 
         .detailed_description {
             text-align: left;
@@ -29,6 +37,7 @@
     .technologies {
         color: $white;
         font-size: $button;
+        padding: calc($small * .25) 0;
     }
 
     div .heading {
@@ -47,17 +56,14 @@
         grid-area: 5 / 8 / 6 / 18;
         gap: $small;
         padding-top: $large;
+        text-align: center;
 
         .cta {
             margin: auto;
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {}
 
-    }
-
-    @media screen and (max-width: 767px) {
-
-    }
+    @media screen and (max-width: 767px) {}
 }

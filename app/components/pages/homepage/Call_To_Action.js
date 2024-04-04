@@ -1,27 +1,24 @@
-import Heading_3 from '../../ui/headings/Heading_3'
+import './Call_To_Action.scss'
+import Heading_2 from '../../ui/headings/Heading_2'
 import Paragraph from '../../ui/paragraphs/Paragraph'
-import Route_Change from '../../ui/transitions/Route_Change'
-import Button from '../../ui/buttons/Button'
+import Contact_Form from '../contact/Contact_Form'
 
 const Call_To_Action = () => {
     return (
         <section id='contact'>
-            <Heading_3
-                h3Text='Ready to Transform Your Online Presence?'
-                className='heading_3'
+            <Heading_2
+                h2Text='Ready to Redefine Your Digital Presence?'
+                className='heading uppercase'
             />
             
             <Paragraph
-                pText="If you're looking for a web development partner who truly understands the needs of startups and small businesses, look no further. Contact me today, and let's start crafting your digital future, with no upfront costs."
-                className='paragraph'
+                pText="Let's Build Something Remarkable Together!"
+                className='subheading uppercase'
             />
 
-            <Route_Change href='/contact'>
-                <Button
-                    buttonText='Get in Touch Now'
-                    className='button'
-                />
-            </Route_Change>
+            <Contact_Form />
+
+            <p className='no_spam'>I respect your privacy. No spam, ever!</p>
         </section>
     )
 }

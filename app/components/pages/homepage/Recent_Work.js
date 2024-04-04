@@ -12,32 +12,32 @@ const Recent_Work = () => {
         <section id='recent_work'>
             <Heading_2
                 className='heading uppercase'
-                h2Text='Showcasing Digital Craftsmanship'
+                h2Text='Portfolio That Tell a Story'
             />
             
             <Paragraph
-                pText="Behold the intersection of aesthetics and functionality in my most recent projects. Each one is a testament to the transformative power of bespoke web design and how it can amplify your business's digital presence."
+                pText="Dive Into Success Stories Crafted by Bespoke Programming"
                 className='subheading uppercase'
             />
 
             <Project
                 className={'div_1'}
                 title='Tsunami Clapham'
-                shortDescription='Website redesign for a Tanzanian hedge fund'
-                technologies='React, Next.js, CSS, Sass, GLSL, Three.js, React Three Fiber'
-                url='https://mara-river-capital-redesign-v2.vercel.app/'
-                detailedDescription='Website redesign for a Tanzanian hedge fund, where I utilized CSS, Sass, React, Next, GLSL, Three.js, and React Three Fiber to create a captivating 3D experience.'
+                shortDescription="Discover Tsunami Clapham's revitalized online vibe, offering a fresh, engaging user experience with every visit."
+                url='https://tsunamiclapham.co.uk'
+                detailedDescription="At Tsunami Clapham, I've crafted a digital space that's as dynamic and inviting as their menu. The website's modern design intuitively connects diners with the restaurant's ambiance, allows for easy updates, and integrates with social media to bring the latest buzz directly to patrons."
                 projectComponent={<Wave_Image textureUrl='./images/projects/tsunami.jpg' />}
+                technologies='Next.js 14, React Three Fiber, GLSL shaders, Supabase, Instagram API, OpenTable'
             />
 
             <Project
                 className={'div_2'}
                 title='Yamamomo Dulwich'
-                shortDescription='Website redesign for a London-based restaurant'
-                technologies='React, Next.js, CSS, Sass'
-                url='https://tsunami-clapham-redesign.vercel.app/'
-                detailedDescription='Website redesign for a London-based restaurant, where I utilized CSS, Sass, React, and Next.js to create a visually stunning and user-friendly experience.'
+                shortDescription="Step into Yamamomo Dulwich's elegant new online look, where browsing their menu and booking a table is a visual treat."
+                url='https://yamamomo.co.uk'
+                detailedDescription="For Yamamomo Dulwich, I've created an online presence that mirrors their chic, contemporary setting. The website boasts a sleek design, streamlines the reservation process, and brings their culinary journey to life with interactive features that capture the restaurant's innovative spirit."
                 projectComponent={<Wave_Image textureUrl='./images/projects/yamamomo.jpg' />}
+                technologies='Next.js 14, React Three Fiber, GLSL shaders, Supabase, OpenTable'
             />
 
             <div className='div div_3'>

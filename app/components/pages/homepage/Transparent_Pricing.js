@@ -10,12 +10,12 @@ const Transparent_Pricing = () => {
         <section id='transparent_pricing'>
             <Heading_2
                 className='heading uppercase'
-                h2Text='Custom Web Solutions'
+                h2Text='Pricing Crafted for Clarity'
             />
 
             <Paragraph
                 className='subheading uppercase'
-                pText='As Bespoke Programming, I specialize in creating unique web solutions tailored to your needs. With me, you receive:'
+                pText='Choose the Plan That Aligns with Your Ambition'
             />
 
             <div className='overlay div_1'>

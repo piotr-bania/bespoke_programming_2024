@@ -5,18 +5,17 @@ import Image from 'next/image'
 import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
 import Heading_4 from '../../ui/headings/Heading_4'
-import Heading_1 from '../../ui/headings/Heading_1'
 
 const Process_Explained = () => {
     return (
         <section id='process_section'>
             <Heading_2
                 className='heading uppercase'
-                h2Text='Embark on Your Web Development Voyage'
+                h2Text='Your Roadmap to Digital Excellence'
             />
 
             <Paragraph
-                pText='Share your vision during our initial, cost-free consultation'
+                pText='Transparent, Collaborative, and Meticulous – Every Step of the Way'
                 className='subheading uppercase'
             />
 

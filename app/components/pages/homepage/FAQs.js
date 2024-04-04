@@ -1,27 +1,38 @@
-import Heading_3 from '../../ui/headings/Heading_3'
+import './FAQs.scss'
+import Heading_2 from '../../ui/headings/Heading_2'
 import Paragraph from '../../ui/paragraphs/Paragraph'
 import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
+import FAQ_Question from '../faq/FAQ_Questions'
+import { Homepage_Questions } from '../faq/All_Questions'
 
 const FAQs = () => {
     return (
         <section id='faq'>
-            <Heading_3
-                h3Text="Got Questions? I've Got Answers."
-                className='heading_3'
+            <Heading_2
+                className='heading uppercase'
+                h2Text="Clarity Meets Convenience"
             />
             
             <Paragraph
-                pText='Dive into frequently asked questions about my services, the £0 upfront cost model, and what you can expect when partnering with me. Everything you need to know to make an informed decision.'
-                className='paragraph'
+                pText='Answers to Propel Your Digital Quest Forward'
+                className='subheading uppercase'
             />
 
-            <Route_Change href='/faq'>
-                <Button
-                    buttonText='Read FAQs'
-                    className='button'
+            <FAQ_Question items={Homepage_Questions} />
+
+            <div className='more_faq'>
+                <h4>Still have questions?</h4>
+                <Paragraph
+                    pText='Find out more about how I work and what I can do for you on my comprehensive FAQ page.'
                 />
-            </Route_Change>
+                <Route_Change href='/faq'>
+                    <Button
+                        buttonText='Read FAQs'
+                        className='button'
+                    />
+                </Route_Change>
+            </div>
         </section>
     )
 }

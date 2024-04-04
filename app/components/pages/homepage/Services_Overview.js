@@ -10,12 +10,12 @@ const Services_Overview = () => {
         <section id='services_section'>
             <Heading_2
                 className='heading uppercase'
-                h2Text='Custom-Crafted Services'
+                h2Text='Services Tailored for Impact'
             />
 
             <Paragraph
                 className='subheading uppercase'
-                pText='Elevate your business with bespoke web solutions. From initial concepts to polished digital platforms, I ensure a seamless journey to a vibrant online presence.'
+                pText='From Conception to Launch – Crafting Your Digital Legacy'
             />
 
             <div className='overlay div div_1'>

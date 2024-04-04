@@ -31,15 +31,15 @@ const Project = ({ className, title, shortDescription, technologies, url, detail
                 pText={detailedDescription}
             />
 
-            {/* <Technologies technologies={technologies} /> */}
+            <Technologies technologies={technologies} />
 
-            {/* <div className='project_links'>
-                <Route_Change href={url}>
+            <div className='project_links'>
+                {/* <Route_Change href={url}>
                     <Button
                         buttonText='View Case Study'
                         className='button'
                     />
-                </Route_Change>
+                </Route_Change> */}
 
                 <Route_Change href={url}>
                     <Button
@@ -47,7 +47,7 @@ const Project = ({ className, title, shortDescription, technologies, url, detail
                         className='button'
                     />
                 </Route_Change>
-            </div> */}
+            </div>
         </div>
     )
 }

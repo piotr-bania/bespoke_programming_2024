@@ -121,3 +121,19 @@ export const Button_Variant = {
         }
     }
 }
+
+export const FAQ_Variant = {
+    hidden: {
+        y: 20,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            delay: 0.6,
+            duration: 1.6,
+            ease: [0.33, 1, 0.68, 1]
+        }
+    }
+}

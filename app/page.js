@@ -19,7 +19,7 @@ export default function Home() {
             <Recent_Work />
             <FAQs />
             <Call_To_Action />
-            <About_Me />
+            {/* <About_Me /> */}
         </>
     )
 }

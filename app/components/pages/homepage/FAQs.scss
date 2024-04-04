@@ -1,0 +1,48 @@
+@import '../../../globals.scss';
+
+#faq {
+    .faq_item {
+        grid-area: 3 / 6 / 4 / 20;
+        margin-bottom: $large;
+
+        hr {
+            border: 1px solid #6526D150;
+        }
+
+        p {
+            padding: calc($small * .5) 0;
+        }
+
+        .faq_question {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            h4 {
+                color: $off_white;
+            }
+
+            span {
+                font-size: $header_2;
+                color: $magenta;
+                display: flex;
+                margin-left: calc($large * 2);
+            }
+        }
+    }
+
+    .more_faq {
+        grid-area: 4 / 8 / 5 / 18;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: $small;
+
+        .cta {
+            margin: 0 auto;
+        }
+    }
+}

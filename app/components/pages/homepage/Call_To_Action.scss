@@ -1,0 +1,42 @@
+@import '../../../globals.scss';
+
+#contact {
+    .contact_form {
+        grid-area: 5 / 5 / 6 / 21;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: $small;
+
+            input, textarea {
+                font-family: $paragraph_font;
+                font-size: $paragraph;
+                color: $off_white;
+                background: $background_lighter;
+                border: 1px solid $indigo;
+                border-radius: $border_radius_medium;
+                padding: calc($small * .5);
+                transition: all 0.5s ease-in-out;
+
+                &:focus {
+                    border: 1px solid $indigo;
+                }
+            }
+
+            textarea {
+                resize: none;
+                min-height: 200px;
+            }
+
+            .cta {
+                margin: auto;
+            }
+        }
+    }
+
+    .no_spam {
+        grid-area: 6 / 5 / 7 / 21;
+        text-align: center;
+    }
+}

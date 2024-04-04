@@ -28,7 +28,7 @@ const Navbar = () => {
                     </Route_Change>
                 </div>
 
-                <div className='links'>
+                {/* <div className='links'>
                     <Route_Change href='/services'>
                         Services
                     </Route_Change>
@@ -52,13 +52,13 @@ const Navbar = () => {
                     <Route_Change href='/faq'>
                         FAQ
                     </Route_Change>
-                </div>
 
-                <Route_Change href='/contact' className='cta'>
-                    <Button
-                        buttonText='Start Your Journey'
-                    />
-                </Route_Change>
+                    <Route_Change href='/contact' className='cta'>
+                        <Button
+                            buttonText='Start Your Journey'
+                        />
+                    </Route_Change>
+                </div> */}
             </section>
         </m.nav>
     )
