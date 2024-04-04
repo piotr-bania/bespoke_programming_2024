@@ -14,15 +14,6 @@ export const Navbar_Variant = {
     }
 }
 
-export const Staggered_Links_Variant = {
-    open: {
-        transition: { staggerChildren: 0.1 }
-        },
-    closed: {
-        transition: { staggerChildren: 0.05 }
-    }
-}
-
 export const Menu_Variants = {
     open: {
         y: 0,
@@ -39,5 +30,5 @@ export const Menu_Variants = {
             duration: .5,
             ease: [0.33, 1, 0.68, 1]
         }
-    }    
+    }
 }

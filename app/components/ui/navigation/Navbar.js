@@ -3,7 +3,7 @@
 import './Navbar.scss'
 import { useEffect, useState } from 'react'
 import { motion as m } from 'framer-motion'
-import { Navbar_Variant, Menu_Variants, Staggered_Links_Variant } from '../../ui/animations/Navigation'
+import { Navbar_Variant, Menu_Variants } from '../../ui/animations/Navigation'
 import Image from 'next/image'
 import Route_Change from '../transitions/Route_Change'
 import Button from '../buttons/Button'
@@ -20,11 +20,7 @@ const Navbar = () => {
     }
 
     const handleHamburgerClick = () => {
-        if (isOpen) {
-            closeMenu()
-        } else {
-            setIsOpen(true)
-        }
+        setIsOpen(!isOpen)
     }
 
     useEffect(() => {
@@ -70,13 +66,19 @@ const Navbar = () => {
                     className='menu_container'
                     initial='closed'
                     animate={isOpen ? 'open' : 'closed'}
+                    exit='closed'
                     variants={Menu_Variants}
-
+                    onAnimationComplete={() => {
+                        if (!isOpen) {
+                            closeMenu()
+                        }
+                    }}
                 >
                     <m.div
                         className='menu_links'
                         initial='closed'
                         animate={isOpen ? 'open' : 'closed'}
+                        exit='closed'
                         variants={Menu_Variants}
                     >
                         <Route_Change href='/services'>

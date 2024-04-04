@@ -8,6 +8,7 @@ const Leave_Animation = ({ onAnimationComplete }) => {
             className='animation_container'
             initial='hidden'
             animate='visible'
+            exit='hidden'
             variants={Page_Leave_Variant}
             onAnimationComplete={onAnimationComplete}
         />
