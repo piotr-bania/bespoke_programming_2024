@@ -15,19 +15,30 @@ export const Navbar_Variant = {
 }
 
 export const Menu_Variants = {
-    open: {
-        y: 0,
+    closed: {
+        y: '-100%',
         opacity: 1,
         transition: {
-            duration: .5,
+            duration: .75,
+            delay: .25,
             ease: [0.33, 1, 0.68, 1]
         }
     },
-    closed: {
-        y: 50,
-        opacity: 0,
+    fading: {
+        y: '0%',
+        opacity: 1,
         transition: {
-            duration: .5,
+            duration: .75,
+            delay: .25,
+            ease: [0.33, 1, 0.68, 1]
+        }
+    },
+    open: {
+        y: '0%',
+        opacity: 1,
+        transition: {
+            duration: .75,
+            delay: .25,
             ease: [0.33, 1, 0.68, 1]
         }
     }

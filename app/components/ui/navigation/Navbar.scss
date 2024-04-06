@@ -20,7 +20,7 @@
             align-items: center;
         }
 
-        .menu {
+        .hamburger {
             height: 24px;
             display: flex;
             flex-direction: column;
@@ -72,7 +72,6 @@
             backdrop-filter: grayscale(1) blur(5px);
             z-index: -1;
             opacity: 0;
-            visibility: hidden;
             transition: opacity .75s ease-in-out, visibility .75s ease-in-out;
 
             .menu_links {
@@ -102,7 +101,6 @@
 
         .menu.open~.menu_container {
             opacity: 1;
-            visibility: visible;
         }
     }
 

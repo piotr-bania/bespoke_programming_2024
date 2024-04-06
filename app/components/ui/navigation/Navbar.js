@@ -20,7 +20,12 @@ const Navbar = () => {
     }
 
     const handleHamburgerClick = () => {
-        setIsOpen(!isOpen)
+        if (isOpen) {
+            setIsOpen('fading')
+            setTimeout(() => setIsOpen(false), 650)
+        } else {
+            setIsOpen(true)
+        }
     }
 
     useEffect(() => {
@@ -53,7 +58,7 @@ const Navbar = () => {
                 </div>
 
                 <div
-                    className={`menu ${isOpen ? 'open' : 'closed'}`}
+                    className={`hamburger ${isOpen ? 'open' : 'closed'}`}
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <svg className='line top'></svg>
@@ -64,7 +69,7 @@ const Navbar = () => {
                 <m.div
                     className='menu_container'
                     initial='closed'
-                    animate={isOpen ? 'open' : 'closed'}
+                    animate={isOpen ? 'open' : isOpen === 'fading' ? 'fading' : 'closed'}
                     exit='closed'
                     variants={Menu_Variants}
                     onAnimationComplete={() => {
