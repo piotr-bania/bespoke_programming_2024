@@ -9,11 +9,11 @@ section {
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         grid-template-columns: repeat(8, 1fr);
-        padding: $medium;
+        padding: $medium 0;
     }
 
     @media screen and (max-width: 767px) {
         grid-template-columns: repeat(4, 1fr);
-        padding: $small;
+        padding: $small 0;
     }
 }

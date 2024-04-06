@@ -34,13 +34,12 @@ const Navbar = () => {
     }, [isOpen]) 
 
     return (
-        <m.nav
-            className='navbar'
-            initial='hidden'
-            animate='visible'
-            variants={Navbar_Variant}
-        >
-            <section id='navbar'>
+        <section id='navbar'>
+            <m.nav
+                initial='hidden'
+                animate='visible'
+                variants={Navbar_Variant}
+            >
                 <div className='logo'>
                     <Route_Change href='/'>
                         <Image
@@ -108,8 +107,8 @@ const Navbar = () => {
                         </Route_Change>
                     </m.div>
                 </m.div>
-            </section>
-        </m.nav>
+            </m.nav>
+        </section>
     )
 }
 
