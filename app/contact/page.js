@@ -1,9 +1,9 @@
-import Hero from '../components/pages/contact/Hero'
+import Detailed_Contact from '../components/pages/contact/Detailed_Contact'
 
 const Contact_Page = () => {
     return (
         <>
-            <Hero />
+            <Detailed_Contact />
         </>
     )
 }

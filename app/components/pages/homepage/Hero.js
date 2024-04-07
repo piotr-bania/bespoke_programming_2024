@@ -47,7 +47,7 @@ const Hero = () => {
                         initial='hidden'
                         animate='visible'
                         exit='hidden'
-                        className='paragraph'
+                        className='paragraph lined_paragraph'
                     >
                         {paragraph[index]}
                     </m.p>

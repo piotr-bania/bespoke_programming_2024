@@ -107,6 +107,13 @@ p {
     padding: 0;
 }
 
+.lined_paragraph {
+    background: linear-gradient(180deg, $indigo 0%, $magenta 100%);
+    background-size: 2px;
+    background-repeat: no-repeat;
+    padding-left: calc($small * .5);
+}
+
 a {
     font-size: $button;
     text-decoration: none;
@@ -212,6 +219,28 @@ button {
         flex-direction: column-reverse;
         text-align: center;
 
+        img {
+            width: 100px;
+            margin: auto;
+        }
+    }
+}
+
+.div {
+    img {
+        width: 140px;
+        height: auto;
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        img {
+            width: 120px;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
         img {
             width: 100px;
             margin: auto;

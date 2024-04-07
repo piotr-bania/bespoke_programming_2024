@@ -1,9 +1,9 @@
-import Hero from '../components/pages/services/Hero'
+import Detailed_Services from '../components/pages/services/Detailed_Services'
 
 const Services_Page = () => {
     return (
         <>
-            <Hero />
+            <Detailed_Services />
         </>
     )
 }

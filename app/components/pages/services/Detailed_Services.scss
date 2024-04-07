@@ -1,0 +1,151 @@
+@import '../../../globals.scss';
+
+#services_page {
+    .div {
+        h3 {
+            margin: 0;
+        }
+
+        h4 {
+            margin: $small 0;
+        }
+    }
+
+    .div_2,
+    .div_4,
+    .div_6,
+    .div_8 {
+        margin-bottom: calc($large * 2);
+    }
+
+    .div_1 {
+        grid-area: 3 / 5 / 4 / 13;
+    }
+
+    .div_2 {
+        grid-area: 4 / 7 / 5 / 19;
+    }
+
+    .div_3 {
+        grid-area: 5 / 5 / 6 / 13;
+    }
+
+    .div_4 {
+        grid-area: 6 / 7 / 7 / 19;
+    }
+
+    .div_5 {
+        grid-area: 7 / 5 / 8 / 13;
+    }
+
+    .div_6 {
+        grid-area: 8 / 7 / 9 / 19;
+    }
+
+    .div_7 {
+        grid-area: 9 / 5 / 10 / 13;
+    }
+
+    .div_8 {
+        grid-area: 10 / 7 / 11 / 19;
+    }
+
+    .div_9 {
+        grid-area: 11 / 4 / 12 / 21;
+        text-align: center;
+
+        .cta {
+            margin-top: $small;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .div_1 {
+            grid-area: 3 / 3 / 4 / 14;
+        }
+
+        .div_2 {
+            grid-area: 4 / 4 / 5 / 15;
+        }
+
+        .div_3 {
+            grid-area: 5 / 3 / 6 / 14;
+        }
+
+        .div_4 {
+            grid-area: 6 / 4 / 7 / 15;
+        }
+
+        .div_5 {
+            grid-area: 7 / 3 / 8 / 14;
+        }
+
+        .div_6 {
+            grid-area: 8 / 4 / 9 / 15;
+        }
+
+        .div_7 {
+            grid-area: 9 / 3 / 10 / 14;
+        }
+
+        .div_8 {
+            grid-area: 10 / 4 / 11 / 15;
+        }
+
+        .div_9 {
+            grid-area: 11 / 2 / 12 / 16;
+            text-align: center;
+
+            .cta {
+                margin-top: $small;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .div_1 {
+            grid-area: 3 / 1 / 4 / 9;
+            text-align: center;
+        }
+
+        .div_2 {
+            grid-area: 4 / 1 / 5 / 9;
+        }
+
+        .div_3 {
+            grid-area: 5 / 1 / 6 / 9;
+            text-align: center;
+        }
+
+        .div_4 {
+            grid-area: 6 / 1 / 7 / 9;
+        }
+
+        .div_5 {
+            grid-area: 7 / 1 / 8 / 9;
+            text-align: center;
+        }
+
+        .div_6 {
+            grid-area: 8 / 1 / 9 / 9;
+        }
+
+        .div_7 {
+            grid-area: 9 / 1 / 10 / 9;
+            text-align: center;
+        }
+
+        .div_8 {
+            grid-area: 10 / 1 / 11 / 9;
+        }
+
+        .div_9 {
+            grid-area: 11 / 2 / 12 / 8;
+            text-align: center;
+
+            .cta {
+                margin-top: $small;
+            }
+        }
+    }
+}
