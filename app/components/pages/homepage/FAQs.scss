@@ -45,4 +45,25 @@
             margin: 0 auto;
         }
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .faq_item {
+            grid-area: 3 / 3 / 4 / 16;
+        }
+
+        .more_faq {
+            grid-area: 4 / 4 / 5 / 15;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .faq_item {
+            grid-area: 3 / 1 / 4 / 9;
+        }
+
+        .more_faq {
+            grid-area: 4 / 1 / 5 / 9;
+            margin-top: calc($small * 2);
+        }
+    }
 }

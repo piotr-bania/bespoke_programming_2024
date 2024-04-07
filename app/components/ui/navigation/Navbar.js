@@ -85,6 +85,10 @@ const Navbar = () => {
                         exit='closed'
                         variants={Menu_Variants}
                     >
+                        <Route_Change href='/'>
+                            <h1 onClick={handleHamburgerClick}>Home</h1>
+                        </Route_Change>
+
                         <Route_Change href='/services'>
                             <h1 onClick={handleHamburgerClick}>Services</h1>
                         </Route_Change>

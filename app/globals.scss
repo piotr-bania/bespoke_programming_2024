@@ -110,12 +110,21 @@ p {
 a {
     font-size: $button;
     text-decoration: none;
-    text-transform: uppercase;
     color: $dark_grey;
     transition: all 0.5s ease-in-out;
 
     &:hover {
         color: $white;
+    }
+}
+
+.link {
+    color: $white;
+    text-decoration: underline $magenta 2px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        text-decoration: underline $indigo 2px;
     }
 }
 
@@ -183,9 +192,29 @@ button {
     }
 
     img {
-        width: 150px;
+        width: 140px;
         height: auto;
         display: flex;
         align-self: flex-start;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        img {
+            width: 120px;
+            margin: auto;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        img {
+            width: 100px;
+            margin: auto;
+        }
     }
 }

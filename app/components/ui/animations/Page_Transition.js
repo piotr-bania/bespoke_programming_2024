@@ -18,7 +18,7 @@ export const Page_Enter_Variant = {
     visible: {
         height: '0%',
         transition: {
-            duration: 1,
+            duration: 3,
             ease: [.22, 1, .36, 1]
         }
     }

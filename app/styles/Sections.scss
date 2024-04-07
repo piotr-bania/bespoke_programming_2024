@@ -4,16 +4,16 @@ section {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     grid-template-rows: auto;
-    padding: $large 0;
+    padding: calc($large * .5) $large;
     gap: $small;
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        grid-template-columns: repeat(8, 1fr);
-        padding: $medium 0;
+        grid-template-columns: repeat(16, 1fr);
+        padding: calc($medium * .5) $medium;
     }
 
     @media screen and (max-width: 767px) {
-        grid-template-columns: repeat(4, 1fr);
-        padding: $small 0;
+        grid-template-columns: repeat(8, 1fr);
+        padding: $small;
     }
 }

@@ -1,12 +1,116 @@
 @import '../../../globals.scss';
 
+.footer_left,
+.footer_right {
+    height: calc($large * 1.25);
+    background: linear-gradient(90deg, $indigo 0%, $magenta 100%);
+}
+
+.footer_left {
+    margin-right: calc($large * 3);
+    margin-top: calc($large * 2);
+}
+
+.footer_right {
+    margin-left: calc($large * 3);
+    margin-bottom: $small;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer_left {
+        margin-right: calc($medium * 3);
+    }
+
+    .footer_right {
+        margin-left: calc($medium * 3);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer_left {
+        margin-right: calc($small * 3);
+    }
+
+    .footer_right {
+        margin-left: calc($small * 3);
+    }
+}
+
 #footer {
+    .map {
+        grid-area: 1 / 3 / 5 / 11;
+        filter: grayscale(80%);
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+
+    .location,
+    .office_hours,
+    .telegram,
+    .email {
+        width: max-content;
+    }
+
+    .location {
+        grid-area: 1 / 12 / 2 / 23;
+    }
+
+    .office_hours {
+        grid-area: 2 / 12 / 3 / 23;
+    }
+
+    .telegram {
+        grid-area: 3 / 12 / 4 / 23;
+    }
+
+    .email {
+        grid-area: 4 / 12 / 5 / 23;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .map {
+            grid-area: 1 / 9 / 4 / 16;
+        }
 
+        .location {
+            grid-area: 1 / 2 / 2 / 9;
+        }
+
+        .office_hours {
+            grid-area: 2 / 2 / 3 / 9;
+        }
+
+        .telegram {
+            grid-area: 3 / 2 / 4 / 9;
+        }
+
+        .email {
+            grid-area: 4 / 2 / 5 / 16;
+        }
     }
 
     @media screen and (max-width: 767px) {
+        .location {
+            grid-area: 1 / 1 / 2 / 9;
+        }
 
+        .office_hours {
+            grid-area: 2 / 1 / 3 / 9;
+        }
+
+        .telegram {
+            grid-area: 3 / 1 / 4 / 9;
+        }
+
+        .email {
+            grid-area: 4 / 1 / 5 / 9;
+        }
+
+        .map {
+            grid-area: 5 / 1 / 6 / 9;
+        }
     }
 }

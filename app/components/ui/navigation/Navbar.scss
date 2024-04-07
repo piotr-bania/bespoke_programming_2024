@@ -9,7 +9,6 @@
 
     nav {
         grid-area: 1 / 1 / 2 / 25;
-        padding: 0 $large;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -104,15 +103,15 @@
         }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1023px) {}
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        nav {
+            grid-area: 1 / 1 / 2 / 17;
+        }
+    }
 
     @media screen and (max-width: 767px) {
-        #navbar {
-            .logo {
-                grid-area: 1 / 1 / 2 / 2;
-                display: flex;
-                justify-content: flex-start;
-            }
+        nav {
+            grid-area: 1 / 1 / 2 / 9;
         }
     }
 }
