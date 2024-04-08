@@ -15,7 +15,7 @@ const Hero_Canvas = () => {
                 fov={15}
             />
 
-            <Environment files='./environment/cyclorama_hard_light_1k.hdr' />
+            <Environment files='./environment/dikhololo_night_1k.hdr' />
 
             {/* <Cursor_Light /> */}
 

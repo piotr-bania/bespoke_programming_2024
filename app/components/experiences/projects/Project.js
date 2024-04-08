@@ -26,20 +26,20 @@ const Project = ({ className, title, shortDescription, technologies, url, detail
                 <Project_Canvas projectComponent={projectComponent} />
             </Link>
 
-            <Paragraph
+            {/* <Paragraph
                 className='detailed_description'
                 pText={detailedDescription}
-            />
+            /> */}
 
-            <Technologies technologies={technologies} />
+            {/* <Technologies technologies={technologies} /> */}
 
             <div className='project_links'>
-                {/* <Route_Change href={url}>
+                <Route_Change href={url}>
                     <Button
                         buttonText='View Case Study'
                         className='button'
                     />
-                </Route_Change> */}
+                </Route_Change>
 
                 <Route_Change href={url}>
                     <Button

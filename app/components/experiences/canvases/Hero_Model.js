@@ -1,7 +1,7 @@
 import { Float, useGLTF } from '@react-three/drei'
 
 const Hero_Model = () => {
-    const Hero_Model = useGLTF('/models/padlock.glb')
+    const Hero_Model = useGLTF('/models/rocket_scene.glb')
 
     return (
         <Float
@@ -11,8 +11,8 @@ const Hero_Model = () => {
             floatingRange={[-.15, 0.15]}
         >
             <mesh 
-                position={[1.25, 0, 0]}
-                rotation={[-.5, -0.5, -0.15]}
+                position={[1.25, -.85, 0]}
+                rotation={[-.5, -0.5, 0.5]}
                 scale={.5}
             >
                 <primitive object={Hero_Model.scene} />

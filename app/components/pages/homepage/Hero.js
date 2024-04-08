@@ -12,9 +12,7 @@ import { Paragraph_Variant } from '../../ui/animations/Text'
 const Hero = () => {
     const [index, setIndex] = useState(0)
     const paragraph = [
-        "Embark on a bespoke digital journey tailored to your brand's unique story.",
-        "Unveil a new realm of possibilities with cutting-edge web solutions.",
-        "Connect, captivate, and convert with a website that sets you apart."
+        "Take the stress out of website development. Start today, and don’t worry about costs until launch."
     ]
 
     useEffect(() => {
@@ -31,12 +29,12 @@ const Hero = () => {
 
             <section id='hero_section' >
                 <Heading_1
-                    h1Text="Elevate Your Brand's Horizon"
+                    h1Text="Launch Now, Pay Later"
                     className='heading_1'
                 />
 
                 <Heading_2
-                    h2Text="Where Vision Meets Digital Precision"
+                    h2Text="It’s That Simple"
                     className='heading_2'
                 />
 

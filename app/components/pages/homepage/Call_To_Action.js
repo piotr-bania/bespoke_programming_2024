@@ -7,12 +7,12 @@ const Call_To_Action = () => {
     return (
         <section id='contact'>
             <Heading_2
-                h2Text='Ready to Redefine Your Digital Presence?'
+                h2Text='Your Future Site Awaits'
                 className='heading uppercase'
             />
             
             <Paragraph
-                pText="Let's Build Something Remarkable Together!"
+                pText="Got questions or ready to start? I'm here for you"
                 className='subheading uppercase'
             />
 

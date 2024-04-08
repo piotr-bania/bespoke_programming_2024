@@ -12,11 +12,11 @@ const Recent_Work = () => {
         <section id='recent_work'>
             <Heading_2
                 className='heading uppercase'
-                h2Text='Portfolio That Tell a Story'
+                h2Text='Inspiration Gallery'
             />
             
             <Paragraph
-                pText="Dive Into Success Stories Crafted by Bespoke Programming"
+                pText="Check out what I’ve built and imagine the possibilities"
                 className='subheading uppercase'
             />
 
