@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
                     <Animation_Wrapper>
                         <Strips />
                         {children}
-                        <Footer />
+                        {/* <Footer /> */}
                     </Animation_Wrapper>
                 {/* </Homepage_Loader_Wrapper> */}
             </body>

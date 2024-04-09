@@ -1,25 +1,32 @@
 'use client'
 
-import { Environment, PerspectiveCamera } from '@react-three/drei'
-import { Canvas, useThree, useFrame } from '@react-three/fiber'
-import Cursor_Light from '../scene_elements/Cursor_Light'
+import { Environment, Html, PerspectiveCamera, ScrollControls, useScroll } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
 import Hero_Model from './Hero_Model'
+import Homepage_Experience from './scenes/Homepage_Experience'
+import { AnimatePresence, motion as m } from 'framer-motion'
+import { Paragraph_Variant } from '../../ui/animations/Text'
+import Image from 'next/image'
+import Heading_1 from '../../ui/headings/Heading_1'
+import Heading_2 from '../../ui/headings/Heading_2'
+import Route_Change from '../../ui/transitions/Route_Change'
+import Button from '../../ui/buttons/Button'
 
 const Hero_Canvas = () => {
-
     return (
         <Canvas shadows className='hero_canvas'>
-            <PerspectiveCamera
-                makeDefault
-                position={[0, 0, 10]}
-                fov={15}
-            />
+            <ScrollControls damping={0.1} pages={5}>
+                <PerspectiveCamera
+                    makeDefault
+                    position={[-1, 1, 20]}
+                    fov={15}
+                />
 
-            <Environment files='./environment/dikhololo_night_1k.hdr' />
+                <Environment files='./environment/cyclorama_hard_light_1k.hdr' />
 
-            {/* <Cursor_Light /> */}
-
-            <Hero_Model />
+                <Hero_Model />
+                {/* <Homepage_Experience /> */}
+            </ScrollControls>
         </Canvas>
     )
 }

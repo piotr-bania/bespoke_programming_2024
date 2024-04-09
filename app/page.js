@@ -13,12 +13,12 @@ export default function Home() {
         <>          
             <Hero />
             {/* <Value_Proposition /> */}
-            <Recent_Work />
+            {/* <Recent_Work /> */}
             {/* <Services_Overview /> */}
-            <Transparent_Pricing />
+            {/* <Transparent_Pricing /> */}
             {/* <Process_Explained /> */}
             {/* <FAQs /> */}
-            <Call_To_Action />
+            {/* <Call_To_Action /> */}
             {/* <About_Me /> */}
         </>
     )

@@ -27,7 +27,7 @@ const Hero = () => {
         <div className='hero_section'>
             <Hero_Canvas />
 
-            <section id='hero_section' >
+            {/* <section id='hero_section' >
                 <Heading_1
                     h1Text="Launch Now, Pay Later"
                     className='heading_1'
@@ -58,7 +58,7 @@ const Hero = () => {
                     width={25}
                     height={25}
                 />
-            </section>
+            </section> */}
         </div>
     )
 }
