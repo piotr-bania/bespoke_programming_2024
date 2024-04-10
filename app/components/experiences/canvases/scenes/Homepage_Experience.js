@@ -1,33 +1,47 @@
-import { useGLTF } from '@react-three/drei'
+import { Float, useGLTF, useScroll, useAnimations } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 import { motion as m3d } from 'framer-motion-3d'
-import { useRouter } from 'next/navigation'
+import { useEffect } from 'react'
 
-const Homepage_Experience = () => {
-    const { nodes, materials } = useGLTF('/models/pages/home/home.glb')
-    const router = useRouter()
-    const handleClick = () => {
-        router.push('/about')
-    }
+const Hero_Model = () => {
+    const { scene, animations } = useGLTF('/models/gears.glb')
+    const { actions } = useAnimations(animations, scene)
+    const scroll = useScroll()
+
+    useEffect(() => {
+        Object.values(actions).forEach(action => {
+            action.play()
+            action.paused = true
+        })
+    }, [actions])
+
+    useFrame((state, delta) => {
+        const offset = scroll.offset / (scroll.pages - 1)
+        Object.entries(actions).forEach(([_, action]) => {
+            action.time = (offset * action.getClip().duration) % action.getClip().duration
+        })
+
+        state.camera.position.y = Math.sin(offset * Math.PI * 2) * 10
+        state.camera.position.z= Math.cos(offset * Math.PI * 3) * 10
+        state.camera.lookAt(0, 0, 0)
+    })
 
     return (
-        <>
-            <mesh
-                geometry={nodes.homepage.geometry}
-                rotation={nodes.homepage.rotation}
-                position={nodes.homepage.position}
-                material={materials.white}
-            />
-
-            <m3d.mesh
-                geometry={nodes.button_about_1.geometry}
-                rotation={nodes.button_about_1.rotation}
-                position={nodes.button_about_1.position}
-                material={materials.indigo}
-                whileHover={{ scale: 1.02 }}
-                onClick={handleClick}
-            />
-        </>
+        <Float
+            speed={3}
+            rotationIntensity={.5}
+            floatIntensity={.25}
+            floatingRange={[-.15, 0.15]}
+        >
+            <mesh 
+                // position={[2, -3, 1]}
+                // rotation={[-.5, -0.5, 0.5]}
+                // scale={.25}
+            >
+                <primitive object={scene} />
+            </mesh>
+        </Float>
     )
 }
 
-export default Homepage_Experience
+export default Hero_Model
