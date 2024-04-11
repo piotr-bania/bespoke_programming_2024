@@ -23,8 +23,8 @@ const Detailed_Pocess = () => {
             {/* Let's Talk */}
             <div className='div div_1'>
                 <Image
-                    src='/images/process/discovery_and_consultation.png'
-                    alt='Premium Hosting'
+                    src='/images/process/discovery_and_consultation.webp'
+                    alt='Consultation'
                     width={500}
                     height={500}
                 />
@@ -48,14 +48,14 @@ const Detailed_Pocess = () => {
             {/* Designing Your Site */}
             <div className='div div_3'>
                 <Image
-                    src='/images/process/design_and_development.png'
+                    src='/images/process/design_and_development.webp'
                     alt='Custom Design'
                     width={500}
                     height={500}
                 />
 
                 <Heading_3
-                    h3Text='Designing Your Site'
+                    h3Text='Designing'
                 />
             </div>
 
@@ -73,8 +73,8 @@ const Detailed_Pocess = () => {
             {/* Building It */}
             <div className='div div_5'>
                 <Image
-                    src='/images/process/build.png'
-                    alt='Custom Design'
+                    src='/images/process/build.webp'
+                    alt='Building'
                     width={500}
                     height={500}
                 />
@@ -98,8 +98,8 @@ const Detailed_Pocess = () => {
             {/* Going Live */}
             <div className='div div_7'>
                 <Image
-                    src='/images/process/launch_and_growth.png'
-                    alt='Custom Design'
+                    src='/images/process/launch_and_growth.webp'
+                    alt='Going Live'
                     width={500}
                     height={500}
                 />
@@ -123,8 +123,8 @@ const Detailed_Pocess = () => {
             {/* Keeping It Fresh */}
             <div className='div div_9'>
                 <Image
-                    src='/images/process/enhancement.png'
-                    alt='Custom Design'
+                    src='/images/process/enhancement.webp'
+                    alt='Enhancement'
                     width={500}
                     height={500}
                 />
@@ -148,8 +148,8 @@ const Detailed_Pocess = () => {
             {/* Why Choose Me? */}
             <div className='div div_11'>
                 <Image
-                    src='/images/process/question.png'
-                    alt='Custom Design'
+                    src='/images/process/question.webp'
+                    alt='Question'
                     width={500}
                     height={500}
                 />

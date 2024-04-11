@@ -18,7 +18,7 @@ const Detailed_Portfolio = () => {
                 className='subheading uppercase'
             />
 
-            <Project_Full
+            <Project_No_Case_Study
                 className={'div_1'}
                 title='Tsunami Clapham'
                 projectComponent={<Wave_Image textureUrl='./images/projects/tsunami.jpg' />}
@@ -28,7 +28,7 @@ const Detailed_Portfolio = () => {
                 case_url='/projects/tsunami'
             />
 
-            <Project_Full
+            <Project_No_Case_Study
                 className={'div_2'}
                 title='Yamamomo Dulwich'
                 projectComponent={<Wave_Image textureUrl='./images/projects/yamamomo.jpg' />}
@@ -38,7 +38,7 @@ const Detailed_Portfolio = () => {
                 case_url='/projects/yamamomo'
             />
 
-            <Project_Full
+            <Project_No_Case_Study
                 className={'div_3'}
                 title='Mara River Capital'
                 projectComponent={<Wave_Image textureUrl='./images/projects/mara_river_capital.jpg' />}

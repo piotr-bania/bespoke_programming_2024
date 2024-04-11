@@ -21,8 +21,8 @@ const Process_Explained = () => {
 
             <div className='overlay div div_1'>
                 <Image
-                    src='/images/process/discovery_and_consultation.png'
-                    alt='Premium Hosting'
+                    src='/images/process/discovery_and_consultation.webp'
+                    alt='Discovery and Consultation'
                     width={500}
                     height={500}
                 />
@@ -36,8 +36,8 @@ const Process_Explained = () => {
 
             <div className='overlay div div_2'>
                 <Image
-                    src='/images/process/design_and_development.png'
-                    alt='Premium Hosting'
+                    src='/images/process/design_and_development.webp'
+                    alt='Design and Development'
                     width={500}
                     height={500}
                 />
@@ -51,8 +51,8 @@ const Process_Explained = () => {
 
             <div className='overlay div div_3'>
                 <Image
-                    src='/images/process/launch_and_growth.png'
-                    alt='Premium Hosting'
+                    src='/images/process/launch_and_growth.webp'
+                    alt='Launch and Growth'
                     width={500}
                     height={500}
                 />
@@ -66,8 +66,8 @@ const Process_Explained = () => {
 
             <div className='overlay div div_4'>
                 <Image
-                    src='/images/process/enhancement.png'
-                    alt='Premium Hosting'
+                    src='/images/process/enhancement.webp'
+                    alt='Continual Enhancement'
                     width={500}
                     height={500}
                 />

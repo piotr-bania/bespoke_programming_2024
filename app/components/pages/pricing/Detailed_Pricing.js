@@ -23,8 +23,8 @@ const Detailed_Services = () => {
             {/* Startup Plan - £400/month */}
             <div className='div div_1'>
                 <Image
-                    src='/images/pricing/startup.png'
-                    alt='Premium Hosting'
+                    src='/images/pricing/startup.webp'
+                    alt='Startup Plan'
                     width={500}
                     height={500}
                 />
@@ -48,8 +48,8 @@ const Detailed_Services = () => {
             {/* Business Plan - £600/month */}
             <div className='div div_3'>
                 <Image
-                    src='/images/pricing/business.png'
-                    alt='Custom Design'
+                    src='/images/pricing/business.webp'
+                    alt='Business Plan'
                     width={500}
                     height={500}
                 />
@@ -73,8 +73,8 @@ const Detailed_Services = () => {
             {/* Enterprise Plan - £800/month */}
             <div className='div div_5'>
                 <Image
-                    src='/images/pricing/enterprise.png'
-                    alt='Custom Design'
+                    src='/images/pricing/enterprise.webp'
+                    alt='Enterprise Plan'
                     width={500}
                     height={500}
                 />

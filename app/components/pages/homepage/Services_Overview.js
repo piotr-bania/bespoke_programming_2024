@@ -26,7 +26,7 @@ const Services_Overview = () => {
                     />
                 </div>
                 <Image
-                    src='/images/services/hosting.png'
+                    src='/images/services/hosting.webp'
                     alt='Premium Hosting'
                     width={500}
                     height={500}
@@ -41,8 +41,8 @@ const Services_Overview = () => {
                     />
                 </div>
                 <Image
-                    src='/images/services/design.png'
-                    alt='Premium Hosting'
+                    src='/images/services/design.webp'
+                    alt='Personalized Design & Development'
                     width={500}
                     height={500}
                 />
@@ -56,8 +56,8 @@ const Services_Overview = () => {
                     />
                 </div>
                 <Image
-                    src='/images/services/support.png'
-                    alt='Premium Hosting'
+                    src='/images/services/support.webp'
+                    alt='Dedicated Support'
                     width={500}
                     height={500}
                 />

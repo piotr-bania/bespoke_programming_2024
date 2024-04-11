@@ -15,14 +15,14 @@ export default function RootLayout({ children }) {
     return (
         <html lang='en'>
             <body suppressHydrationWarning={true}>
-                {/* <Homepage_Loader_Wrapper> */}
+                <Homepage_Loader_Wrapper>
                     <Animation_Wrapper>
                         <Navbar />
                         <Strips />
                         {children}
                         <Footer />
                     </Animation_Wrapper>
-                {/* </Homepage_Loader_Wrapper> */}
+                </Homepage_Loader_Wrapper>
             </body>
         </html>
     )
