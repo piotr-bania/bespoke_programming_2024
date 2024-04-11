@@ -1,9 +1,9 @@
-import Hero from '../components/pages/pricing/Hero'
+import Detailed_Pricing from '../components/pages/pricing/Detailed_Pricing'
 
 const Pricing_Page = () => {
     return (
         <>
-            <Hero />
+            <Detailed_Pricing />
         </>
     )
 }

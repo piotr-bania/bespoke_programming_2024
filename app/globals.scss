@@ -126,11 +126,14 @@ a {
 }
 
 .link {
-    color: $white;
+    color: $light_grey;
+    font-size: $paragraph;
     text-decoration: underline $magenta 2px;
+    width: max-content;
     transition: all 0.5s ease-in-out;
 
     &:hover {
+        color: $white;
         text-decoration: underline $indigo 2px;
     }
 }
@@ -172,6 +175,15 @@ button {
 
 .blend {
     color: $blend;
+}
+
+.light_grey {
+    color: $light_grey;
+    transition: all .5s ease-in-out;
+
+    &:hover {
+        color: $white;
+    }
 }
 
 .overlay {

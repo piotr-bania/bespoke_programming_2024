@@ -1,7 +1,7 @@
 import './Recent_Work.scss'
 import Heading_2 from '../../ui/headings/Heading_2'
 import Paragraph from '../../ui/paragraphs/Paragraph'
-import Project from '../../experiences/projects/Project'
+import Project_Limited from '../../experiences/projects/Project_Limited'
 import Wave_Image from '../../experiences/scene_elements/Wave_Image'
 import Heading_4 from '../../ui/headings/Heading_4'
 import Route_Change from '../../ui/transitions/Route_Change'
@@ -20,17 +20,15 @@ const Recent_Work = () => {
                 className='subheading uppercase'
             />
 
-            <Project
+            <Project_Limited
                 className={'div_1'}
                 title='Tsunami Clapham'
                 shortDescription="Discover Tsunami Clapham's revitalized online vibe, offering a fresh, engaging user experience with every visit."
                 url='https://tsunamiclapham.co.uk'
-                detailedDescription="At Tsunami Clapham, I've crafted a digital space that's as dynamic and inviting as their menu. The website's modern design intuitively connects diners with the restaurant's ambiance, allows for easy updates, and integrates with social media to bring the latest buzz directly to patrons."
                 projectComponent={<Wave_Image textureUrl='./images/projects/tsunami.jpg' />}
-                technologies='Next.js 14, React Three Fiber, GLSL shaders, Supabase, Instagram API, OpenTable'
             />
 
-            <Project
+            <Project_Limited
                 className={'div_2'}
                 title='Yamamomo Dulwich'
                 shortDescription="Step into Yamamomo Dulwich's elegant new online look, where browsing their menu and booking a table is a visual treat."

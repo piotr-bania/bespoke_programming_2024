@@ -16,12 +16,12 @@ export default function RootLayout({ children }) {
         <html lang='en'>
             <body suppressHydrationWarning={true}>
                 {/* <Homepage_Loader_Wrapper> */}
-                    <Navbar />
-                    {/* <Animation_Wrapper> */}
+                    <Animation_Wrapper>
+                        <Navbar />
                         <Strips />
                         {children}
-                        {/* <Footer /> */}
-                    {/* </Animation_Wrapper> */}
+                        <Footer />
+                    </Animation_Wrapper>
                 {/* </Homepage_Loader_Wrapper> */}
             </body>
         </html>

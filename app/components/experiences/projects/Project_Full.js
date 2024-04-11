@@ -6,7 +6,7 @@ import Project_Canvas from '../canvases/Project_Canvas'
 import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
 
-const Project = ({ className, title, shortDescription, technologies, url, detailedDescription, projectComponent }) => {
+const Project_Full = ({ className, title, technologies, case_url, live_url, detailedDescription, projectComponent }) => {
     return (
         <div className={`div ${className}`}>
             <Heading_4
@@ -14,42 +14,40 @@ const Project = ({ className, title, shortDescription, technologies, url, detail
                 h4Text={title}
             />
 
-            <Paragraph
-                className='short_description'
-                pText={shortDescription}
-            />
-
             <Link
-                href={url}
+                href={live_url}
                 target='_blank'
             >
                 <Project_Canvas projectComponent={projectComponent} />
             </Link>
 
-            {/* <Paragraph
+            <Paragraph
                 className='detailed_description'
                 pText={detailedDescription}
-            /> */}
+            />
 
-            {/* <Technologies technologies={technologies} /> */}
+            <Technologies technologies={technologies} />
 
             <div className='project_links'>
-                <Route_Change href={url}>
+                <Route_Change href={case_url}>
                     <Button
                         buttonText='View Case Study'
                         className='button'
                     />
                 </Route_Change>
 
-                <Route_Change href={url}>
+                <Link
+                    href={live_url}
+                    target='_blank'
+                >
                     <Button
                         buttonText='See the Live Site'
                         className='button'
                     />
-                </Route_Change>
+                </Link>
             </div>
         </div>
     )
 }
 
-export default Project
+export default Project_Full

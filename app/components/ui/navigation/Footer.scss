@@ -37,80 +37,79 @@
 }
 
 #footer {
-    .map {
-        grid-area: 1 / 3 / 5 / 11;
-        filter: grayscale(80%);
-        transition: all 0.5s ease-in-out;
-
-        &:hover {
-            filter: grayscale(0%);
-        }
-    }
-
-    .location,
-    .office_hours,
-    .telegram,
-    .email {
-        width: max-content;
-    }
-
-    .location {
-        grid-area: 1 / 12 / 2 / 23;
+    .company {
+        grid-area: 1 / 3 / 2 / 13;
     }
 
     .office_hours {
-        grid-area: 2 / 12 / 3 / 23;
+        grid-area: 1 / 13 / 2 / 23;
     }
 
-    .telegram {
-        grid-area: 3 / 12 / 4 / 23;
+    .contact_links {
+        grid-area: 2 / 3 / 3 / 13;
     }
 
-    .email {
-        grid-area: 4 / 12 / 5 / 23;
+    .cta {
+        grid-area: 3 / 3 / 4 / 13;
+    }
+
+    .social_media {
+        grid-area: 2 / 13 / 4 / 18;
+    }
+
+    .pages_links {
+        grid-area: 2 / 18 / 4 / 23;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        .map {
-            grid-area: 1 / 9 / 4 / 16;
-        }
-
-        .location {
-            grid-area: 1 / 2 / 2 / 9;
+        .company {
+            grid-area: 1 / 3 / 2 / 10;
         }
 
         .office_hours {
-            grid-area: 2 / 2 / 3 / 9;
+            grid-area: 2 / 3 / 3 / 10;
         }
 
-        .telegram {
-            grid-area: 3 / 2 / 4 / 9;
+        .contact_links {
+            grid-area: 3 / 3 / 4 / 10;
         }
 
-        .email {
-            grid-area: 4 / 2 / 5 / 16;
+        .cta {
+            grid-area: 4 / 3 / 5 / 10;
+        }
+
+        .social_media {
+            grid-area: 1 / 10 / 3 / 15;
+        }
+
+        .pages_links {
+            grid-area: 3 / 10 / 5 / 15;
         }
     }
 
     @media screen and (max-width: 767px) {
-        .location {
-            grid-area: 1 / 1 / 2 / 9;
+        .company {
+            grid-area: 1 / 2 / 2 / 8;
         }
 
         .office_hours {
-            grid-area: 2 / 1 / 3 / 9;
+            grid-area: 2 / 2 / 3 / 8;
         }
 
-        .telegram {
-            grid-area: 3 / 1 / 4 / 9;
+        .contact_links {
+            grid-area: 3 / 2 / 4 / 8;
         }
-
-        .email {
-            grid-area: 4 / 1 / 5 / 9;
+        
+        .social_media {
+            grid-area: 4 / 2 / 5 / 5;
         }
-
-        .map {
-            grid-area: 5 / 1 / 6 / 9;
+        
+        .pages_links {
+            grid-area: 4 / 5 / 5 / 8;
+        }
+        
+        .cta {
+            grid-area: 5 / 2 / 6 / 8;
         }
     }
 }

@@ -1,6 +1,6 @@
 @import '../../../globals.scss';
 
-#services_page {
+#process_page {
     .div {
         h3 {
             margin: 0;
@@ -14,7 +14,9 @@
     .div_2,
     .div_4,
     .div_6,
-    .div_8 {
+    .div_8,
+    .div_10,
+    .div_12 {
         margin-bottom: calc($large * 2);
     }
 
@@ -51,6 +53,22 @@
     }
 
     .div_9 {
+        grid-area: 7 / 4 / 8 / 12;
+    }
+
+    .div_10 {
+        grid-area: 8 / 4 / 9 / 12;
+    }
+
+    .div_11 {
+        grid-area: 7 / 14 / 8 / 22;
+    }
+
+    .div_12 {
+        grid-area: 8 / 14 / 9 / 22;
+    }
+
+    .div_13 {
         grid-area: 11 / 4 / 12 / 22;
         text-align: center;
 
@@ -93,12 +111,23 @@
         }
 
         .div_9 {
-            grid-area: 11 / 2 / 12 / 16;
-            text-align: center;
+            grid-area: 11 / 3 / 12 / 14;
+        }
 
-            .cta {
-                margin-top: $small;
-            }
+        .div_10 {
+            grid-area: 12 / 4 / 13 / 15;
+        }
+
+        .div_11 {
+            grid-area: 13 / 3 / 14 / 14;
+        }
+
+        .div_12 {
+            grid-area: 14 / 4 / 15 / 15;
+        }
+
+        .div_13 {
+            grid-area: 15 / 3 / 16 / 14;
         }
     }
 
@@ -140,12 +169,25 @@
         }
 
         .div_9 {
-            grid-area: 11 / 2 / 12 / 8;
+            grid-area: 11 / 1 / 12 / 9;
             text-align: center;
+        }
 
-            .cta {
-                margin-top: $small;
-            }
+        .div_10 {
+            grid-area: 12 / 1 / 13 / 9;
+        }
+
+        .div_11 {
+            grid-area: 13 / 1 / 14 / 9;
+            text-align: center;
+        }
+
+        .div_12 {
+            grid-area: 14 / 1 / 15 / 9;
+        }
+
+        .div_13 {
+            grid-area: 15 / 1 / 16 / 9;
         }
     }
 }

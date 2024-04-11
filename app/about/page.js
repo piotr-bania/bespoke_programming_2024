@@ -1,9 +1,9 @@
-import Hero from '../components/pages/about/Hero'
+import Detailed_About from '../components/pages/about/Detailed_About'
 
 const About_Page = () => {
     return (
         <>
-            <Hero />
+            <Detailed_About />
         </>
     )
 }

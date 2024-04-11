@@ -6,6 +6,10 @@
         flex-direction: column;
         gap: calc($small * .5);
 
+        .title {
+            text-align: center;
+        }
+
         .project_canvas {
             filter: grayscale(80%);
             transition: all 0.5s ease-in-out;
@@ -13,6 +17,10 @@
             &:hover {
                 filter: grayscale(0%);
             }
+        }
+
+        .short_description {
+            text-align: center;
         }
 
         .detailed_description {
@@ -29,7 +37,7 @@
     .project_links {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         gap: $small;
     }
@@ -45,11 +53,11 @@
     }
 
     .div_1 {
-        grid-area: 3 / 4 / 4 / 12;
+        grid-area: 3 / 3 / 4 / 13;
     }
 
     .div_2 {
-        grid-area: 3 / 14 / 4 / 22;
+        grid-area: 3 / 13 / 4 / 23;
     }
 
     .div_3 {

@@ -1,9 +1,9 @@
-import Hero from '../components/pages/portfolio/Hero'
+import Detailed_Portfolio from '../components/pages/portfolio/Detailed_Portfolio'
 
 const Portfolio_Page = () => {
     return (
         <>
-            <Hero />
+            <Detailed_Portfolio />
         </>
     )
 }

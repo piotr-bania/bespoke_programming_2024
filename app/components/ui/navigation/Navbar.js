@@ -57,6 +57,21 @@ const Navbar = () => {
                     </Route_Change>
                 </div>
 
+                <div className='desktop_links'>
+                    <Route_Change href='/services'><p>Services</p></Route_Change>
+                    <Route_Change href='/portfolio'><p>Portfolio</p></Route_Change>
+                    <Route_Change href='/process'><p>Process</p></Route_Change>
+                    <Route_Change href='/about'><p>About</p></Route_Change>
+                    <Route_Change href='/pricing'><p>Pricing</p></Route_Change>
+                    <Route_Change href='/faq'><p>FAQ</p></Route_Change>
+
+                    <Route_Change href='/contact' className='cta'>
+                        <Button
+                            buttonText='Start Your Journey'
+                        />
+                    </Route_Change>
+                </div>
+
                 <div
                     className={`hamburger ${isOpen ? 'open' : 'closed'}`}
                     onClick={() => setIsOpen(!isOpen)}
@@ -85,24 +100,25 @@ const Navbar = () => {
                         exit='closed'
                         variants={Menu_Variants}
                     >
-                        <Route_Change href='/'>
-                            <h1 onClick={handleHamburgerClick}>Home</h1>
-                        </Route_Change>
-
                         <Route_Change href='/services'>
                             <h1 onClick={handleHamburgerClick}>Services</h1>
                         </Route_Change>
 
-                        <Route_Change href='/pricing'>
-                            <h1 onClick={handleHamburgerClick}>Pricing</h1>
+                        <Route_Change href='/portfolio'>
+                            <h1 onClick={handleHamburgerClick}>Portfolio</h1>
                         </Route_Change>
+                        
+                        <Route_Change href='/process'>
+                            <h1 onClick={handleHamburgerClick}>Process</h1>
+                        </Route_Change>
+                        
 
                         <Route_Change href='/about'>
                             <h1 onClick={handleHamburgerClick}>About</h1>
                         </Route_Change>
 
-                        <Route_Change href='/portfolio'>
-                            <h1 onClick={handleHamburgerClick}>Portfolio</h1>
+                        <Route_Change href='/pricing'>
+                            <h1 onClick={handleHamburgerClick}>Pricing</h1>
                         </Route_Change>
 
                         <Route_Change href='/faq'>

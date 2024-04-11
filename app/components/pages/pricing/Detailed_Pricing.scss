@@ -1,6 +1,6 @@
 @import '../../../globals.scss';
 
-#services_page {
+#pricing_page {
     .div {
         h3 {
             margin: 0;
@@ -13,45 +13,36 @@
 
     .div_2,
     .div_4,
-    .div_6,
-    .div_8 {
+    .div_6 {
         margin-bottom: calc($large * 2);
     }
 
     .div_1 {
-        grid-area: 3 / 4 / 4 / 12;
+        grid-area: 3 / 4 / 4 / 22;
     }
 
     .div_2 {
-        grid-area: 4 / 4 / 5 / 12;
+        grid-area: 4 / 4 / 5 / 22;
     }
 
     .div_3 {
-        grid-area: 3 / 14 / 4 / 22;
+        grid-area: 5 / 4 / 6 / 22;
     }
 
     .div_4 {
-        grid-area: 4 / 14 / 5 / 22;
+        grid-area: 6 / 4 / 7 / 22;
     }
 
     .div_5 {
-        grid-area: 5 / 4 / 6 / 12;
+        grid-area: 7 / 4 / 8 / 22;
     }
 
     .div_6 {
-        grid-area: 6 / 4 / 7 / 12;
+        grid-area: 8 / 4 / 9 / 22;
     }
 
     .div_7 {
-        grid-area: 5 / 14 / 6 / 22;
-    }
-
-    .div_8 {
-        grid-area: 6 / 14 / 7 / 22;
-    }
-
-    .div_9 {
-        grid-area: 11 / 4 / 12 / 22;
+        grid-area: 9 / 4 / 10 / 22;
         text-align: center;
 
         .cta {
@@ -61,44 +52,31 @@
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         .div_1 {
-            grid-area: 3 / 3 / 4 / 14;
+            grid-area: 3 / 3 / 4 / 15;
         }
 
         .div_2 {
-            grid-area: 4 / 4 / 5 / 15;
+            grid-area: 4 / 3 / 5 / 15;
         }
 
         .div_3 {
-            grid-area: 5 / 3 / 6 / 14;
+            grid-area: 5 / 3 / 6 / 15;
         }
 
         .div_4 {
-            grid-area: 6 / 4 / 7 / 15;
+            grid-area: 6 / 3 / 7 / 15;
         }
 
         .div_5 {
-            grid-area: 7 / 3 / 8 / 14;
+            grid-area: 7 / 3 / 8 / 15;
         }
 
         .div_6 {
-            grid-area: 8 / 4 / 9 / 15;
+            grid-area: 8 / 3 / 9 / 15;
         }
 
         .div_7 {
-            grid-area: 9 / 3 / 10 / 14;
-        }
-
-        .div_8 {
-            grid-area: 10 / 4 / 11 / 15;
-        }
-
-        .div_9 {
-            grid-area: 11 / 2 / 12 / 16;
-            text-align: center;
-
-            .cta {
-                margin-top: $small;
-            }
+            grid-area: 9 / 3 / 10 / 15;
         }
     }
 
@@ -132,20 +110,6 @@
 
         .div_7 {
             grid-area: 9 / 1 / 10 / 9;
-            text-align: center;
-        }
-
-        .div_8 {
-            grid-area: 10 / 1 / 11 / 9;
-        }
-
-        .div_9 {
-            grid-area: 11 / 2 / 12 / 8;
-            text-align: center;
-
-            .cta {
-                margin-top: $small;
-            }
         }
     }
 }

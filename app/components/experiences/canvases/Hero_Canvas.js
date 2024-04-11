@@ -2,20 +2,20 @@
 
 import { Environment, Html, OrbitControls, PerspectiveCamera, ScrollControls, useScroll } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
-import Hero_Model from './Hero_Model'
+import Homepage_Experience from '../pages/Homepage_Experience'
 
 const Hero_Canvas = () => {
     return (
         <Canvas shadows className='hero_canvas'>
-            <ScrollControls damping={0.1} pages={5}>
-                <PerspectiveCamera
-                    makeDefault
-                    position={[0, 5, 20]}
-                    fov={45}
-                />
-                <Environment files='./environment/cyclorama_hard_light_1k.hdr' />
-                <Hero_Model />
-            </ScrollControls>
+            {/* <ScrollControls damping={0.1} pages={5}> */}
+            <PerspectiveCamera
+                makeDefault
+                position={[0, 0, 15]}
+                fov={15}
+            />
+            <Environment files='./environment/cyclorama_hard_light_1k.hdr' />
+            <Homepage_Experience />
+            {/* </ScrollControls> */}
         </Canvas>
     )
 }
