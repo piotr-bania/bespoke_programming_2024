@@ -13,7 +13,7 @@ const Hero_Canvas = () => {
                 position={[0, 0, 15]}
                 fov={15}
             />
-            <Environment files='./environment/cyclorama_hard_light_1k.hdr' />
+            <Environment files='./environment/dikhololo_night_1k.hdr' />
             <Homepage_Experience />
             {/* </ScrollControls> */}
         </Canvas>
