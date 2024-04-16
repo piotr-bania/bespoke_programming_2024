@@ -5,19 +5,19 @@ import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 
 const Hero_Model = () => {
-    const { scene, animations } = useGLTF('/models/untitled.glb')
+    const { scene, animations } = useGLTF('/models/rocket.glb')
     const { actions } = useAnimations(animations, scene)
     const meshRef = useRef()
-
+    console.log(animations)
     useEffect(() => {
         Object.values(actions).forEach(action => {
             action.play()
         })
     }, [actions])
 
-    useFrame(() => {
-        meshRef.current.rotation.y -= 0.0005
-    })
+    // useFrame(() => {
+    //     meshRef.current.rotation.y -= 0.0005
+    // })
 
     return (
         // <Float
@@ -37,8 +37,8 @@ const Hero_Model = () => {
 
         <mesh
             ref={meshRef}
-            position={[1, 0, 0]}
-            scale={2}
+            position={[0, 0, 0]}
+            scale={1}
         >
             <primitive object={scene} />
         </mesh>
