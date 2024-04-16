@@ -22,7 +22,7 @@ const Detailed_Pocess = () => {
 
             {/* Let's Talk */}
             <div className='div div_1'>
-                <Image
+                <img
                     src='/images/process/discovery_and_consultation.webp'
                     alt='Consultation'
                     width={500}
@@ -47,7 +47,7 @@ const Detailed_Pocess = () => {
 
             {/* Designing Your Site */}
             <div className='div div_3'>
-                <Image
+                <img
                     src='/images/process/design_and_development.webp'
                     alt='Custom Design'
                     width={500}
@@ -72,7 +72,7 @@ const Detailed_Pocess = () => {
 
             {/* Building It */}
             <div className='div div_5'>
-                <Image
+                <img
                     src='/images/process/build.webp'
                     alt='Building'
                     width={500}
@@ -97,7 +97,7 @@ const Detailed_Pocess = () => {
 
             {/* Going Live */}
             <div className='div div_7'>
-                <Image
+                <img
                     src='/images/process/launch_and_growth.webp'
                     alt='Going Live'
                     width={500}
@@ -122,7 +122,7 @@ const Detailed_Pocess = () => {
 
             {/* Keeping It Fresh */}
             <div className='div div_9'>
-                <Image
+                <img
                     src='/images/process/enhancement.webp'
                     alt='Enhancement'
                     width={500}
@@ -147,7 +147,7 @@ const Detailed_Pocess = () => {
 
             {/* Why Choose Me? */}
             <div className='div div_11'>
-                <Image
+                <img
                     src='/images/process/question.webp'
                     alt='Question'
                     width={500}

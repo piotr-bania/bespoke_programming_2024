@@ -25,7 +25,7 @@ const Services_Overview = () => {
                         pText='High performance and reliability for every project'
                     />
                 </div>
-                <Image
+                <img
                     src='/images/services/hosting.webp'
                     alt='Premium Hosting'
                     width={500}
@@ -40,7 +40,7 @@ const Services_Overview = () => {
                         pText='From dynamic single-page applications to immersive web experiences'
                     />
                 </div>
-                <Image
+                <img
                     src='/images/services/design.webp'
                     alt='Personalized Design & Development'
                     width={500}
@@ -55,7 +55,7 @@ const Services_Overview = () => {
                         pText='I offer maintenance and updates tailored to your package choice'
                     />
                 </div>
-                <Image
+                <img
                     src='/images/services/support.webp'
                     alt='Dedicated Support'
                     width={500}

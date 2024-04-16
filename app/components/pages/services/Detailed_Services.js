@@ -21,7 +21,7 @@ const Detailed_Services = () => {
             />
 
             <div className='div div_1'>
-                <Image
+                <img
                     src='/images/services/hosting.webp'
                     alt='Hosting & Performance'
                     width={500}
@@ -45,7 +45,7 @@ const Detailed_Services = () => {
             </div>
 
             <div className='div div_3'>
-                <Image
+                <img
                     src='/images/services/design.webp'
                     alt='Design & Development'
                     width={500}
@@ -69,7 +69,7 @@ const Detailed_Services = () => {
             </div>
 
             <div className='div div_5'>
-                <Image
+                <img
                     src='/images/services/support.webp'
                     alt='Support & Growth'
                     width={500}
@@ -93,7 +93,7 @@ const Detailed_Services = () => {
             </div>
 
             <div className='div div_7'>
-                <Image
+                <img
                     src='/images/services/analytics.webp'
                     alt='Analytics & Insights'
                     width={500}

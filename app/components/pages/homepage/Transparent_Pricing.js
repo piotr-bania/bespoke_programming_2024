@@ -19,7 +19,7 @@ const Transparent_Pricing = () => {
             />
 
             <div className='overlay div_1'>
-                <Image
+                <img
                     src='/images/pricing/startup.webp'
                     alt='Startup Plan'
                     width={500}
@@ -34,7 +34,7 @@ const Transparent_Pricing = () => {
             </div>
 
             <div className='overlay div_2'>
-                <Image
+                <img
                     src='/images/pricing/business.webp'
                     alt='Business Plan'
                     width={500}
@@ -49,7 +49,7 @@ const Transparent_Pricing = () => {
             </div>
 
             <div className='overlay div_3'>
-                <Image
+                <img
                     src='/images/pricing/enterprise.webp'
                     alt='Enterprise Plan'
                     width={500}

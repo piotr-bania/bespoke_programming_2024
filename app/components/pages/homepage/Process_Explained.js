@@ -20,7 +20,7 @@ const Process_Explained = () => {
             />
 
             <div className='overlay div div_1'>
-                <Image
+                <img
                     src='/images/process/discovery_and_consultation.webp'
                     alt='Discovery and Consultation'
                     width={500}
@@ -35,7 +35,7 @@ const Process_Explained = () => {
             </div>
 
             <div className='overlay div div_2'>
-                <Image
+                <img
                     src='/images/process/design_and_development.webp'
                     alt='Design and Development'
                     width={500}
@@ -50,7 +50,7 @@ const Process_Explained = () => {
             </div>
 
             <div className='overlay div div_3'>
-                <Image
+                <img
                     src='/images/process/launch_and_growth.webp'
                     alt='Launch and Growth'
                     width={500}
@@ -65,7 +65,7 @@ const Process_Explained = () => {
             </div>
 
             <div className='overlay div div_4'>
-                <Image
+                <img
                     src='/images/process/enhancement.webp'
                     alt='Continual Enhancement'
                     width={500}
