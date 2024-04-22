@@ -5,6 +5,7 @@ import Strips from './components/ui/strips/Strips'
 import Footer from './components/ui/navigation/Footer'
 import Homepage_Loader_Wrapper from './components/ui/loaders/Homepage_Loader_Wrapper '
 import Animation_Wrapper from './components/ui/transitions/Animation_Wrapper'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
     title: 'Bespoke Web Development for Startups | Zero Upfront Cost',
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
                         <Navbar />
                         <Strips />
                         {children}
+                        <GoogleTagManager gtmId='GTM-394329764' />
                         <Footer />
                     </Animation_Wrapper>
                 </Homepage_Loader_Wrapper>

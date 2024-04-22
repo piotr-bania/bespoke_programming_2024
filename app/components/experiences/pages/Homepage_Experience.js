@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 
 const Hero_Model = () => {
-    const { scene, animations } = useGLTF('/models/rocket.glb')
+    const { scene, animations } = useGLTF('/models/rocket_scene.glb')
     const { actions } = useAnimations(animations, scene)
     const meshRef = useRef()
     console.log(animations)
@@ -16,32 +16,33 @@ const Hero_Model = () => {
     }, [actions])
 
     // useFrame(() => {
-    //     meshRef.current.rotation.y -= 0.0005
+    //     meshRef.current.rotation.y -= 0.05
     // })
 
     return (
-        // <Float
-        //     speed={2}
-        //     rotationIntensity={2}
-        //     floatIntensity={.5}
-        //     floatingRange={[-.5, .5]}
-        // >
-        //     <mesh
-        //         position={[2.75, -.6, 0]}
-        //         rotation={[degToRad(30), 0, degToRad(60)]}
-        //         scale={.65}
-        //     >
-        //         <primitive object={scene} />
-        //     </mesh>
-        // </Float>
-
-        <mesh
-            ref={meshRef}
-            position={[0, 0, 0]}
-            scale={1}
+        <Float
+            speed={2}
+            rotationIntensity={2}
+            floatIntensity={.5}
+            floatingRange={[-.5, .5]}
         >
-            <primitive object={scene} />
-        </mesh>
+            <mesh
+                ref={meshRef}
+                position={[3, 3, 0]}
+                rotation={[degToRad(30), 0, degToRad(50)]}
+                scale={3}
+            >
+                <primitive object={scene} />
+            </mesh>
+        </Float>
+
+        // <mesh
+        //     ref={meshRef}
+        //     position={[0, 0, 0]}
+        //     scale={1}
+        // >
+        //     <primitive object={scene} />
+        // </mesh>
     )
 }
 
