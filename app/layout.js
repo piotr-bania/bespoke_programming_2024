@@ -31,14 +31,14 @@ export default function RootLayout({ children }) {
 				</Script>
 			</head>
 			<body suppressHydrationWarning={true}>
-				{/* <Homepage_Loader_Wrapper> */}
+				<Homepage_Loader_Wrapper>
 					<Animation_Wrapper>
 						<Navbar />
 						<Strips />
 						{children}
 						<Footer />
 					</Animation_Wrapper>
-				{/* </Homepage_Loader_Wrapper> */}
+				</Homepage_Loader_Wrapper>
 			</body>
 		</html>
 	)
