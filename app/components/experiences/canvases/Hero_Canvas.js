@@ -10,10 +10,10 @@ const Hero_Canvas = () => {
             {/* <ScrollControls damping={0.1} pages={5}> */}
             <PerspectiveCamera
                 makeDefault
-                position={[-5, 8, 75]}
+                position={[-1, 8, 75]}
                 fov={15}
             />
-            <Environment files='./environment/cyclorama_hard_light_1k.hdr' />
+            <Environment files='./environment/studio_garden_1k.hdr' />
             <Homepage_Experience />
 
             {/* </ScrollControls> */}
