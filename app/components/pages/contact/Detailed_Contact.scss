@@ -76,6 +76,10 @@
         .no_spam {
             grid-area: 6 / 4 / 7 / 15;
         }
+
+        .div_3 {
+            grid-area: 7 / 4 / 8 / 15;
+        }
     }
     
     @media screen and (max-width: 767px) {
@@ -93,6 +97,10 @@
 
         .no_spam {
             grid-area: 6 / 1 / 7 / 9;
+        }
+
+        .div_3 {
+            grid-area: 7 / 1 / 8 / 9;
         }
     }
 }
