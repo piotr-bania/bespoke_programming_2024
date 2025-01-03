@@ -28,12 +28,12 @@ $gradient_paragraph: linear-gradient($indigo 0%, $magenta 100%);
 $gradient_grey: linear-gradient(90deg, #0e051e90, #07030f10);
 
 // ---------- Fluid fonts ----------
-$button: clamp(0.8rem, 0.16vw + 0.76rem, 0.95rem);
-$paragraph: clamp(1rem, 0.4vw + 0.9rem, 1.38rem);
-$header_4: clamp(1.25rem, 0.79vw + 1.05rem, 1.99rem);
-$header_3: clamp(1.56rem, 1.42vw + 1.21rem, 2.89rem);
-$header_2: clamp(1.95rem, 2.39vw + 1.36rem, 4.19rem);
-$header_1: clamp(2.44rem, 3.88vw + 1.47rem, 6.08rem);
+$button: clamp(0.88rem, 0.45vi + 0.76rem, 1.13rem);
+$paragraph: clamp(1.09rem, 0.9vi + 0.87rem, 1.59rem);
+$header_4: clamp(1.37rem, 1.6vi + 0.97rem, 2.25rem);
+$header_3: clamp(1.71rem, 2.68vi + 1.04rem, 3.18rem);
+$header_2: clamp(2.14rem, 4.29vi + 1.06rem, 4.5rem);
+$header_1: clamp(2.67rem, 6.71vi + 0.99rem, 6.36rem);
 
 // ---------- Fluid space ----------
 $small: clamp(1.13rem, calc(1.04rem + 0.41vw), 1.5rem);
@@ -63,7 +63,7 @@ body {
 	color: $dark_grey;
 	font-family: $paragraph_font;
 	font-size: $paragraph;
-	line-height: 1.2;
+	line-height: 1.4;
 	margin: auto;
 }
 
@@ -94,7 +94,7 @@ h2,
 h3,
 h4 {
 	font-family: $heading_font;
-	line-height: 1.1;
+	line-height: 1;
 	color: $off_white;
 	height: max-content;
 	margin: 0;
@@ -104,7 +104,6 @@ h4 {
 h1 {
 	font-size: $header_1;
 	text-transform: uppercase;
-	line-height: 0.8;
 }
 
 h2 {
@@ -121,7 +120,6 @@ h4 {
 
 p {
 	font-size: $paragraph;
-	line-height: 1.2;
 	height: max-content;
 	margin: 0;
 	padding: 0;
@@ -183,6 +181,10 @@ button {
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.italic {
+	font-style: italic;
 }
 
 .indigo {

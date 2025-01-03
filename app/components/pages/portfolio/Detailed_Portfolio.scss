@@ -52,6 +52,18 @@
         grid-area: 4 / 14 / 5 / 23;
     }
 
+    .div_5 {
+        grid-area: 5 / 3 / 6 / 23;
+        text-align: center;
+        
+        text-align: center;
+
+        .cta {
+            margin: auto;
+            margin-top: $small;
+        }
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         .project_canvas {
             height: 35vh;
@@ -71,6 +83,10 @@
 
         .div_4 {
             grid-area: 6 / 3 / 7 / 15;
+        }
+
+        .div_5 {
+            grid-area: 7 / 3 / 8 / 15;
         }
     }
 
@@ -105,6 +121,10 @@
 
         .div_4 {
             grid-area: 6 / 1 / 7 / 9;
+        }
+
+        .div_5 {
+            grid-area: 7 / 1 / 8 / 9;
         }
     }
 }

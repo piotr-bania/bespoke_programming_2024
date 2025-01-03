@@ -47,9 +47,17 @@
         }
     }
 
-    .no_spam {
+    .div_3 {
         grid-area: 6 / 5 / 7 / 21;
         text-align: center;
+        margin-top: $small;
+    }
+
+    .no_spam {
+        grid-area: 7 / 5 / 8 / 21;
+        text-align: center;
+        text-transform: uppercase;
+        color: $off_white;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {

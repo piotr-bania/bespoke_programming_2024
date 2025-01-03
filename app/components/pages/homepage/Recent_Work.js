@@ -16,14 +16,14 @@ const Recent_Work = () => {
             />
             
             <Paragraph
-                pText="Check out what I’ve built and imagine the possibilities"
+                pText="Have a look at what I’ve built—imagine the possibilities for your own site."
                 className='subheading uppercase'
             />
 
             <Project_Limited
                 className={'div_1'}
                 title='Tsunami Clapham'
-                shortDescription="Discover Tsunami Clapham's revitalized online vibe, offering a fresh, engaging user experience with every visit."
+                shortDescription="A refreshed online vibe that captures the restaurant’s energetic atmosphere."
                 url='https://tsunamiclapham.co.uk'
                 projectComponent={<Wave_Image textureUrl='./images/projects/tsunami.jpg' />}
             />
@@ -31,7 +31,7 @@ const Recent_Work = () => {
             <Project_Limited
                 className={'div_2'}
                 title='Yamamomo Dulwich'
-                shortDescription="Step into Yamamomo Dulwich's elegant new online look, where browsing their menu and booking a table is a visual treat."
+                shortDescription="Chic, modern design with interactive booking—mirroring the restaurant’s contemporary flair."
                 url='https://yamamomo.co.uk'
                 detailedDescription="For Yamamomo Dulwich, I've created an online presence that mirrors their chic, contemporary setting. The website boasts a sleek design, streamlines the reservation process, and brings their culinary journey to life with interactive features that capture the restaurant's innovative spirit."
                 projectComponent={<Wave_Image textureUrl='./images/projects/yamamomo.jpg' />}
@@ -41,9 +41,9 @@ const Recent_Work = () => {
             <div className='div div_3'>
                 <Heading_4
                     className='heading'
-                    h4Text='Ready to see more?'
+                    h4Text='Want to See More?'
                 />
-                <p>Step into a world where design meets innovation. <br />Click to view a portfolio where every project tells a story of creativity and precision crafted to enhance digital engagement and business presence.</p>
+                <p>Step into a portfolio where every project tells a unique story of creativity and precision.</p>
                 <Route_Change href='/portfolio'>
                     <Button
                         buttonText='Witness the Transformation'

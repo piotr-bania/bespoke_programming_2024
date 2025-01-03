@@ -1,60 +1,74 @@
 @import '../../../globals.scss';
 
 #faq_page {
-    .faq_item {
-        grid-area: 3 / 4 / 4 / 22;
-        margin-bottom: $large;
+	.faq_item {
+		grid-area: 3 / 4 / 4 / 22;
+		margin-bottom: $large;
 
-        hr {
-            border: 1px solid #6526D150;
+		hr {
+			border: 1px solid #6526d150;
+		}
+
+		p {
+			padding: calc($small * 0.5) 0;
+		}
+
+		.faq_question {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			cursor: pointer;
+
+			h4 {
+				color: $off_white;
+			}
+
+			span {
+				font-size: $header_2;
+				color: $magenta;
+				display: flex;
+				margin-left: calc($large * 2);
+			}
+		}
+	}
+
+	.more_faq {
+		grid-area: 4 / 8 / 5 / 18;
+		text-align: center;
+	}
+
+	.cta {
+		grid-area: 5 / 8 / 6 / 18;
+		text-align: center;
+		margin-top: $small;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		.faq_item {
+			grid-area: 3 / 3 / 4 / 15;
+		}
+
+		.more_faq {
+			grid-area: 4 / 3 / 5 / 15;
+		}
+
+        .cta {
+            grid-area: 5 / 3 / 6 / 15;
         }
+	}
 
-        p {
-            padding: calc($small * .5) 0;
+	@media screen and (max-width: 767px) {
+		.faq_item {
+			grid-area: 3 / 1 / 4 / 9;
+		}
+
+		.more_faq {
+			grid-area: 4 / 1 / 5 / 9;
+		}
+
+        .cta {
+            grid-area: 5 / 1 / 6 / 9;
         }
-
-        .faq_question {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-
-            h4 {
-                color: $off_white;
-            }
-
-            span {
-                font-size: $header_2;
-                color: $magenta;
-                display: flex;
-                margin-left: calc($large * 2);
-            }
-        }
-    }
-
-    .more_faq {
-        grid-area: 4 / 8 / 5 / 18;
-        text-align: center;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        .faq_item {
-            grid-area: 3 / 3 / 4 / 15;
-        }
-
-        .more_faq {
-            grid-area: 4 / 3 / 5 / 15;
-        }
-    }
-
-    @media screen and (max-width: 767px) {
-        .faq_item {
-            grid-area: 3 / 1 / 4 / 9;
-        }
-
-        .more_faq {
-            grid-area: 4 / 1 / 5 / 9;
-        }
-    }
+	}
 }

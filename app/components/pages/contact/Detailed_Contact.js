@@ -5,33 +5,35 @@ import Paragraph from '../../ui/paragraphs/Paragraph'
 import Contact_Form from './Contact_Form'
 
 const Detailed_Contact = () => {
-    return (
-        <section id='contact_page'>
-            <Heading_2
-                h2Text="Let's Connect"
-                className='heading uppercase'
-            />
-            
-            <Paragraph
-                pText="Your Journey to Exceptional Web Presence Begins Here"
-                className='subheading uppercase'
-            />
+	return (
+		<section id="contact_page">
+			<Heading_2 h2Text="Get in Touch" className="heading uppercase" />
 
-            <Heading_4
-                h4Text='Get in Touch'
-                className='div div_1'
-            />
+			<Paragraph
+				pText="Start Your Journey to a Bespoke Digital Experience"
+				className="subheading uppercase"
+			/>
 
-            <Paragraph
-                pText="I'm excited to hear about your project and help you bring your digital vision to life. Please fill out the form below and I'll get back to you as soon as possible."
-                className='paragraph div div_2'
-            />
+			<Heading_4
+				h4Text="Let's Bring Your Vision to Life"
+				className="div div_1"
+			/>
 
-            <Contact_Form />
+			<Paragraph
+				pText="I’m here to help you craft the perfect digital presence. Fill out the form below, and I’ll get back to you promptly to discuss your goals and how we can bring them to life."
+				className="paragraph div div_2"
+			/>
 
-            <p className='no_spam'>I respect your privacy. No spam, ever!</p>
-        </section>
-    )
+			<Contact_Form />
+
+			<Paragraph
+				pText="Prefer other ways to connect? Reach out via email or Telegram, and let’s start building your future."
+				className="div div_3"
+			/>
+
+			<p className="no_spam">I respect your privacy. No spam, ever!</p>
+		</section>
+	)
 }
 
 export default Detailed_Contact

@@ -13,7 +13,7 @@ const Hero_Canvas = () => {
                 position={[-1, 8, 75]}
                 fov={15}
             />
-            <Environment files='./environment/studio_garden_1k.hdr' />
+            <Environment files='./environment/photo_studio_01_1k.hdr' />
             <Homepage_Experience />
 
             {/* </ScrollControls> */}

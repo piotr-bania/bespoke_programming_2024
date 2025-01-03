@@ -8,106 +8,110 @@ import Route_Change from '../../ui/transitions/Route_Change'
 import Button from '../../ui/buttons/Button'
 
 const Detailed_Services = () => {
-    return (
-        <section id='pricing_page'>
-            <Heading_2
-                h2Text='Pricing Plans Designed for Your Success'
-                className='heading uppercase'
-            />
+	return (
+		<section id="pricing_page">
+			<Heading_2
+				h2Text="Pricing Plans Designed for Your Success"
+				className="heading uppercase"
+			/>
 
-            <Paragraph
-                pText='Find the perfect match for your digital ambitions'
-                className='subheading uppercase'
-            />
+			<Paragraph
+				pText="Choose the perfect plan to match your digital goals"
+				className="subheading uppercase"
+			/>
 
-            {/* Startup Plan - £400/month */}
-            <div className='div div_1'>
-                <img
-                    src='/images/pricing/startup.webp'
-                    alt='Startup Plan'
-                    width={500}
-                    height={500}
-                />
+			{/* Startup Plan - £400/month */}
+			<div className="div div_1">
+				<img
+					src="/images/pricing/startup.webp"
+					alt="Startup Plan"
+					width={500}
+					height={500}
+				/>
 
-                <Heading_3
-                    h3Text="Startup Plan - £400/month"
-                />
-            </div>
+				<h3>
+					Startup Plan —<abbr className="indigo"> £250/month</abbr>{' '}
+					(12 months)
+				</h3>
+			</div>
 
-            <div className='div div_2'>
-                <Heading_4
-                    h4Text='Get Set, Go Digital!'
-                />
+			<div className="div div_2">
+				<h4 className="italic">
+					20% Discount Upfront: <abbr className="indigo">£2,400</abbr>
+				</h4>
 
-                <Paragraph
-                    pText="Ideal for fresh faces on the digital scene, this plan gives you everything you need to start strong. You get a sleek, user-friendly website that makes an impact without overwhelming you with complexities. It's the perfect starter kit for a digital debut, complete with essential features and guidance to make your mark online."
-                    className='lined_paragraph'
-                />
-            </div>
+				<Paragraph
+					pText="Perfect for new businesses—get a professional, user-friendly website to make a strong start without unnecessary complexity."
+					className="lined_paragraph"
+				/>
+			</div>
 
-            {/* Business Plan - £600/month */}
-            <div className='div div_3'>
-                <img
-                    src='/images/pricing/business.webp'
-                    alt='Business Plan'
-                    width={500}
-                    height={500}
-                />
+			{/* Business Plan - £600/month */}
+			<div className="div div_3">
+				<img
+					src="/images/pricing/business.webp"
+					alt="Business Plan"
+					width={500}
+					height={500}
+				/>
 
-                <Heading_3
-                    h3Text='Business Plan - £600/month'
-                />
-            </div>
+				<h3>
+					Business Plan —<abbr className="indigo"> £350/month</abbr>{' '}
+					(12 months)
+				</h3>
+			</div>
 
-            <div className='div div_4'>
-                <Heading_4
-                    h4Text='Gear Up for Growth!'
-                />
+			<div className="div div_4">
+				<h4 className="italic">
+					20% Discount Upfront: <abbr className="indigo">£3,360</abbr>
+				</h4>
 
-                <Paragraph
-                    pText="Step up your digital game. This plan is crafted for businesses ready to accelerate. It includes everything from the Startup Plan plus advanced functionalities that scale with your growth. You’ll have access to richer features like enhanced SEO, integrated analytics, and essential maintenance. It’s the support system you need to evolve and sustain your growing online presence."
-                    className='lined_paragraph'
-                />
-            </div>
+				<Paragraph
+					pText="Tailored for growing businesses, this plan includes enhanced features like advanced SEO, integrated analytics, and professional maintenance to support your scaling efforts."
+					className="lined_paragraph"
+				/>
+			</div>
 
-            {/* Enterprise Plan - £800/month */}
-            <div className='div div_5'>
-                <img
-                    src='/images/pricing/enterprise.webp'
-                    alt='Enterprise Plan'
-                    width={500}
-                    height={500}
-                />
+			{/* Enterprise Plan - £800/month */}
+			<div className="div div_5">
+				<img
+					src="/images/pricing/enterprise.webp"
+					alt="Enterprise Plan"
+					width={500}
+					height={500}
+				/>
 
-                <Heading_3
-                    h3Text='Enterprise Plan - £800/month'
-                />
-            </div>
+				<h3>
+					Enterprise Plan —<abbr className="indigo"> £800/month</abbr>{' '}
+					(12 months)
+				</h3>
+			</div>
 
-            <div className='div div_6'>
-                <Heading_4
-                    h4Text='Full-throttle Digital Power!'
-                />
+			<div className="div div_6">
+				<h4 className="italic">
+					20% Discount Upfront: <abbr className="indigo">£7,680</abbr>
+				</h4>
 
-                <Paragraph
-                    pText="For the business that demands the best, this complete package leaves no stone unturned. Enjoy bespoke development with sophisticated 3D designs that captivate and engage your audience. This is top-of-the-line support with advanced optimization, security, and feature-rich enhancements. If you’re looking to not just compete but lead in the digital space, this is the plan for you."
-                    className='lined_paragraph'
-                />
-            </div>
+				<Paragraph
+					pText="The ultimate package for businesses aiming to lead. Includes cutting-edge designs, sophisticated 3D features, and top-tier support to dominate the digital space."
+					className="lined_paragraph"
+				/>
+			</div>
 
-            {/* Ready to start? */}
-            <div className='div div_7'>
-                <h4>Still looking for the perfect fit?</h4>
-                <p>Bespoke Services for Unique Needs. <br />If your project has specific requirements or you have a vision that doesn't neatly fit into one of these plans, I'm here to tailor a solution just for you. Together, we'll align on a service package that caters exactly to what your brand and website require.</p>
-                <Route_Change href='/contact'>
-                    <Button
-                        buttonText='Tailor My Plan'
-                        className='button'
-                    />
-                </Route_Change>
-            </div>
-        </section>
-    )
+			{/* Ready to start? */}
+			<div className="div div_7">
+				<h4>Need Something More Specific?</h4>
+				<p>
+					If your project has unique requirements, I offer additional
+					customization options. Let’s build a package tailored to
+					your exact needs.
+				</p>
+				<Route_Change href="/contact">
+					<Button buttonText="Tailor My Plan" className="button" />
+				</Route_Change>
+			</div>
+		</section>
+	)
 }
 
 export default Detailed_Services

@@ -6,7 +6,7 @@ const Contact_Links = () => {
         <div className='contact_links'>
             <div className='telegram'>
                 <h4>Telegram</h4>
-                <Link href='https://t.me/bespokeprogramming' target='blank' className='link'>
+                <Link href='https://t.me/+wXV6CfavGhJlMzhk' target='blank' className='link'>
                     t.me/bespokeprogramming
                 </Link>
             </div>
