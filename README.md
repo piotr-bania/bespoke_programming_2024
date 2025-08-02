@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bespoke Programming
 
-## Getting Started
+**Custom websites and micro SaaS tools — fast, clean, and built to convert.**
 
-First, run the development server:
+Bespoke Programming is a London-based web development company building high-performance websites and applications for small businesses, restaurants, and founders. We focus on clarity, speed, and ROI — not fluff.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+-   **Next.js 15** + App Router
+-   **React 19**
+-   **Tailwind CSS**
+-   **Framer Motion**
+-   **Supabase**
+-   **Resend (email handling)**
+-   **HeroUI / custom UI components**
+-   **Vercel (hosting & serverless)**
+-   **Hostinger (static deployments)**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🔧 Projects
 
-To learn more about Next.js, take a look at the following resources:
+| Project                 | Description                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------- |
+| **EZinvoices**          | Lightweight invoicing app with branded templates, smart reminders, and subscriptions. |
+| **SafeDiningLife**      | Allergy-tracking system for restaurants with real-time role-based dashboards.         |
+| **Restaurant Websites** | Modern, SEO-optimised sites for Yama Momo, Tsunami, and others in London.             |
+| **Lead Funnels**        | Landing pages designed to convert paid traffic into booked clients.                   |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📬 Contact & Lead Capture API
 
-## Deploy on Vercel
+This repo includes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-   `/app/api/sendEmail/route.js` – a production-ready Resend integration for receiving lead form submissions
+-   CORS-protected endpoints (safelist by origin)
+-   Secure email delivery setup with SPF, DKIM, and DMARC
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## 💼 Use Cases
+
+-   Restaurant websites that are easy to edit but sharp enough for fine dining.
+-   Freelancers who want automated invoicing without Xero bloat.
+-   Local businesses that need a landing page that actually converts.
+-   Founders launching MVPs, lead capture funnels, or micro SaaS tools.
+
+---
+
+## ⚡ Deployment
+
+-   **Frontend static sites** hosted via Hostinger or Vercel (hybrid)
+-   **Backend API routes** handled via Vercel or serverless functions
+-   **Domain + Email** DNS settings configured for Resend and HTTPS
+
+---
+
+## 🤝 Work With Me
+
+> I offer one discounted build slot per month for new clients.
+
+Want a sharp site that doesn’t waste time?  
+[https://www.bespokeprogramming.net](https://www.bespokeprogramming.net)
+
+Or message me directly:  
+📨 `contact@bespokeprogramming.net`  
+📲 [Telegram](https://t.me/yourusername)
+
+---
+
+## 🧾 Licence
+
+MIT — build your own version, or hire me to build it for you.
